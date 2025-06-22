@@ -1,0 +1,1592 @@
+1749935468: mosquitto version 2.0.21 starting
+1749935468: Config loaded from /mosquitto/config/mosquitto.conf.
+1749935468: Starting in local only mode. Connections will only be possible from clients running on this machine.
+1749935468: Create a configuration file which defines a listener to allow remote access.
+1749935468: For more details see https://mosquitto.org/documentation/authentication-methods/
+1749935468: Opening ipv4 listen socket on port 1883.
+1749935468: Opening ipv6 listen socket on port 1883.
+1749935468: mosquitto version 2.0.21 running
+1749936147: mosquitto version 2.0.21 terminating
+1749936147: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749936173: mosquitto version 2.0.21 starting
+1749936173: Config loaded from /mosquitto/config/mosquitto.conf.
+1749936173: Opening ipv4 listen socket on port 1883.
+1749936173: Opening ipv6 listen socket on port 1883.
+1749936173: mosquitto version 2.0.21 running
+1749936200: New connection from 172.22.0.1:61036 on port 1883.
+1749936200: Client connector disconnected, not authorised.
+1749936200: New connection from 172.22.0.1:61048 on port 1883.
+1749936200: Client connector disconnected, not authorised.
+1749936275: mosquitto version 2.0.21 terminating
+1749936275: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749936281: mosquitto version 2.0.21 starting
+1749936281: Config loaded from /mosquitto/config/mosquitto.conf.
+1749936281: Opening ipv4 listen socket on port 1883.
+1749936281: Opening ipv6 listen socket on port 1883.
+1749936281: mosquitto version 2.0.21 running
+1749936287: New connection from 172.22.0.1:63520 on port 1883.
+1749936287: New client connected from 172.22.0.1:63520 as connector (p2, c1, k30, u'mqtt').
+1749936287: Client connector closed its connection.
+1749936698: New connection from 172.22.0.1:63150 on port 1883.
+1749936698: New client connected from 172.22.0.1:63150 as connector (p2, c1, k30, u'mqtt').
+1749936698: Client connector disconnected.
+1749936838: New connection from 172.22.0.1:61540 on port 1883.
+1749936838: New client connected from 172.22.0.1:61540 as connector (p2, c1, k30, u'mqtt').
+1749936838: Client connector disconnected.
+1749937678: New connection from 172.22.0.1:55120 on port 1883.
+1749937678: New client connected from 172.22.0.1:55120 as connector (p2, c1, k30, u'mqtt').
+1749937682: Client connector disconnected.
+1749938082: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749938419: New connection from 172.22.0.1:59088 on port 1883.
+1749938419: New client connected from 172.22.0.1:59088 as connector (p2, c1, k30, u'mqtt').
+1749938467: Client connector disconnected.
+1749938471: New connection from 172.22.0.1:59898 on port 1883.
+1749938471: New client connected from 172.22.0.1:59898 as connector (p2, c1, k30, u'mqtt').
+1749938808: New connection from 172.22.0.1:58710 on port 1883.
+1749938808: New client connected from 172.22.0.1:58710 as mymqtt-114225217033942 (p2, c0, k60).
+1749938854: New connection from 172.22.0.1:64106 on port 1883.
+1749938854: New client connected from 172.22.0.1:64106 as test (p2, c1, k60).
+1749938854: Client test disconnected.
+1749938875: New connection from 172.22.0.1:56918 on port 1883.
+1749938875: New client connected from 172.22.0.1:56918 as test (p2, c1, k60).
+1749938875: Client test disconnected.
+1749938938: New connection from 172.22.0.1:55008 on port 1883.
+1749938938: New client connected from 172.22.0.1:55008 as test (p2, c1, k60).
+1749938938: Client test disconnected.
+1749938945: New connection from 172.22.0.1:65330 on port 1883.
+1749938945: New client connected from 172.22.0.1:65330 as test (p2, c1, k60).
+1749938945: Client test disconnected.
+1749938954: New connection from 172.22.0.1:61978 on port 1883.
+1749938954: New client connected from 172.22.0.1:61978 as test (p2, c1, k60).
+1749938954: Client test disconnected.
+1749938990: New connection from 172.22.0.1:61170 on port 1883.
+1749938990: New client connected from 172.22.0.1:61170 as test (p2, c1, k60).
+1749938990: Client test disconnected.
+1749938994: New connection from 172.22.0.1:65038 on port 1883.
+1749938994: New client connected from 172.22.0.1:65038 as test (p2, c1, k60).
+1749938994: Client test disconnected.
+1749938998: New connection from 172.22.0.1:65042 on port 1883.
+1749938998: New client connected from 172.22.0.1:65042 as test (p2, c1, k60).
+1749938998: Client test disconnected.
+1749939012: New connection from 172.22.0.1:60338 on port 1883.
+1749939012: New client connected from 172.22.0.1:60338 as test (p2, c1, k60).
+1749939012: Client test disconnected.
+1749939044: New connection from 172.22.0.1:60054 on port 1883.
+1749939044: New client connected from 172.22.0.1:60054 as test (p2, c1, k60).
+1749939044: Client test disconnected.
+1749939061: New connection from 172.22.0.1:58354 on port 1883.
+1749939061: New client connected from 172.22.0.1:58354 as test (p2, c1, k60).
+1749939061: Client test disconnected.
+1749939139: New connection from 172.22.0.1:57118 on port 1883.
+1749939139: New client connected from 172.22.0.1:57118 as test (p2, c1, k60).
+1749939139: Client test disconnected.
+1749939143: New connection from 172.22.0.1:59758 on port 1883.
+1749939143: New client connected from 172.22.0.1:59758 as test (p2, c1, k60).
+1749939143: Client test disconnected.
+1749939159: New connection from 172.22.0.1:55922 on port 1883.
+1749939159: New client connected from 172.22.0.1:55922 as test (p2, c1, k60).
+1749939159: Client test disconnected.
+1749939215: New connection from 172.22.0.1:62754 on port 1883.
+1749939215: New client connected from 172.22.0.1:62754 as test (p2, c1, k60).
+1749939215: Client test disconnected.
+1749939241: New connection from 172.22.0.1:63220 on port 1883.
+1749939241: New client connected from 172.22.0.1:63220 as test (p2, c1, k60).
+1749939241: Client test disconnected.
+1749939258: New connection from 172.22.0.1:58038 on port 1883.
+1749939258: New client connected from 172.22.0.1:58038 as test (p2, c1, k60).
+1749939258: Client test disconnected.
+1749939280: New connection from 172.22.0.1:60110 on port 1883.
+1749939280: New client connected from 172.22.0.1:60110 as test (p2, c1, k60).
+1749939280: Client test disconnected.
+1749939304: New connection from 172.22.0.1:58604 on port 1883.
+1749939304: New client connected from 172.22.0.1:58604 as test (p2, c1, k60).
+1749939304: Client test disconnected.
+1749939313: New connection from 172.22.0.1:56790 on port 1883.
+1749939313: New client connected from 172.22.0.1:56790 as test (p2, c1, k60).
+1749939313: Client test disconnected.
+1749939480: New connection from 172.22.0.1:64464 on port 1883.
+1749939480: New client connected from 172.22.0.1:64464 as test (p2, c1, k60).
+1749939480: Client test disconnected.
+1749939486: New connection from 172.22.0.1:58346 on port 1883.
+1749939486: New client connected from 172.22.0.1:58346 as test (p2, c1, k60).
+1749939486: Client test disconnected.
+1749939498: New connection from 172.22.0.1:55426 on port 1883.
+1749939498: New client connected from 172.22.0.1:55426 as test (p2, c1, k60).
+1749939498: Client test disconnected.
+1749939530: New connection from 172.22.0.1:56844 on port 1883.
+1749939530: New client connected from 172.22.0.1:56844 as test (p2, c1, k60).
+1749939530: Client test disconnected.
+1749939534: New connection from 172.22.0.1:61254 on port 1883.
+1749939534: New client connected from 172.22.0.1:61254 as test (p2, c1, k60).
+1749939534: Client test disconnected.
+1749939558: New connection from 172.22.0.1:57414 on port 1883.
+1749939558: New client connected from 172.22.0.1:57414 as test (p2, c1, k60).
+1749939558: Client test disconnected.
+1749939568: New connection from 172.22.0.1:58472 on port 1883.
+1749939568: New client connected from 172.22.0.1:58472 as test (p2, c1, k60).
+1749939568: Client test disconnected.
+1749939577: New connection from 172.22.0.1:59736 on port 1883.
+1749939577: New client connected from 172.22.0.1:59736 as test (p2, c1, k60).
+1749939577: Client test disconnected.
+1749939608: New connection from 172.22.0.1:56066 on port 1883.
+1749939608: New client connected from 172.22.0.1:56066 as test (p2, c1, k60).
+1749939608: Client test disconnected.
+1749939624: New connection from 172.22.0.1:56668 on port 1883.
+1749939624: New client connected from 172.22.0.1:56668 as test (p2, c1, k60).
+1749939624: Client test disconnected.
+1749939628: New connection from 172.22.0.1:56680 on port 1883.
+1749939628: New client connected from 172.22.0.1:56680 as test (p2, c1, k60).
+1749939628: Client test disconnected.
+1749939631: New connection from 172.22.0.1:56694 on port 1883.
+1749939631: New client connected from 172.22.0.1:56694 as test (p2, c1, k60).
+1749939631: Client test disconnected.
+1749939641: New connection from 172.22.0.1:57708 on port 1883.
+1749939641: New client connected from 172.22.0.1:57708 as test (p2, c1, k60).
+1749939641: Client test disconnected.
+1749939644: New connection from 172.22.0.1:60406 on port 1883.
+1749939644: New client connected from 172.22.0.1:60406 as test (p2, c1, k60).
+1749939644: Client test disconnected.
+1749939699: New connection from 172.22.0.1:57794 on port 1883.
+1749939699: New client connected from 172.22.0.1:57794 as test (p2, c1, k60).
+1749939699: Client test disconnected.
+1749939708: New connection from 172.22.0.1:62050 on port 1883.
+1749939708: New client connected from 172.22.0.1:62050 as test (p2, c1, k60).
+1749939708: Client test disconnected.
+1749939737: New connection from 172.22.0.1:65310 on port 1883.
+1749939737: New client connected from 172.22.0.1:65310 as test (p2, c1, k60).
+1749939737: Client test disconnected.
+1749939743: New connection from 172.22.0.1:58424 on port 1883.
+1749939743: New client connected from 172.22.0.1:58424 as test (p2, c1, k60).
+1749939743: Client test disconnected.
+1749939800: Client connector disconnected.
+1749939874: mosquitto version 2.0.21 terminating
+1749939874: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749994415: mosquitto version 2.0.21 starting
+1749994415: Config loaded from /mosquitto/config/mosquitto.conf.
+1749994415: Opening ipv4 listen socket on port 1883.
+1749994415: Opening ipv6 listen socket on port 1883.
+1749994415: mosquitto version 2.0.21 running
+1749994432: New connection from 172.23.0.1:57612 on port 1883.
+1749994432: New client connected from 172.23.0.1:57612 as connector (p2, c1, k30, u'mqtt').
+1749994458: New connection from 172.23.0.1:59670 on port 1883.
+1749994458: New client connected from 172.23.0.1:59670 as test (p2, c1, k60).
+1749994458: Client test disconnected.
+1749994469: Client connector disconnected.
+1749994787: New connection from 172.23.0.1:64344 on port 1883.
+1749994787: New client connected from 172.23.0.1:64344 as connector (p2, c1, k30, u'mqtt').
+1749994991: Client connector disconnected.
+1749994993: New connection from 172.23.0.1:57864 on port 1883.
+1749994993: New client connected from 172.23.0.1:57864 as connector (p2, c1, k30, u'mqtt').
+1749996216: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749998017: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1749999434: Client connector disconnected.
+1749999459: New connection from 172.23.0.1:60568 on port 1883.
+1749999459: New client connected from 172.23.0.1:60568 as connector (p2, c1, k30, u'mqtt').
+1749999615: Client connector disconnected.
+1749999616: New connection from 172.23.0.1:57130 on port 1883.
+1749999616: New client connected from 172.23.0.1:57130 as connector (p2, c1, k30, u'mqtt').
+1749999617: Client connector disconnected.
+1749999620: New connection from 172.23.0.1:57132 on port 1883.
+1749999620: New client connected from 172.23.0.1:57132 as connector (p2, c1, k30, u'mqtt').
+1749999666: Client connector disconnected.
+1749999667: New connection from 172.23.0.1:63758 on port 1883.
+1749999667: New client connected from 172.23.0.1:63758 as connector (p2, c1, k30, u'mqtt').
+1749999678: Client connector disconnected.
+1749999679: New connection from 172.23.0.1:57628 on port 1883.
+1749999679: New client connected from 172.23.0.1:57628 as connector (p2, c1, k30, u'mqtt').
+1749999685: Client connector disconnected.
+1749999691: New connection from 172.23.0.1:65128 on port 1883.
+1749999691: New client connected from 172.23.0.1:65128 as connector (p2, c1, k30, u'mqtt').
+1749999818: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750001036: Client connector disconnected.
+1750001038: New connection from 172.23.0.1:55478 on port 1883.
+1750001038: New client connected from 172.23.0.1:55478 as connector (p2, c1, k30, u'mqtt').
+1750001619: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750002417: Client connector disconnected.
+1750002472: New connection from 172.23.0.1:63280 on port 1883.
+1750002472: New client connected from 172.23.0.1:63280 as connector (p2, c1, k30, u'exampleuser').
+1750002473: Client connector disconnected.
+1750002512: New connection from 172.23.0.1:59374 on port 1883.
+1750002512: New client connected from 172.23.0.1:59374 as connector (p2, c1, k30, u'exampleuser').
+1750002514: Client connector disconnected.
+1750003420: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750003927: New connection from 172.23.0.1:55390 on port 1883.
+1750003927: New client connected from 172.23.0.1:55390 as connector (p2, c1, k30, u'exampleuser').
+1750003957: Client connector disconnected.
+1750004227: New connection from 172.23.0.1:57898 on port 1883.
+1750004227: New client connected from 172.23.0.1:57898 as connector (p2, c1, k30, u'exampleuser').
+1750004255: Client connector disconnected.
+1750004264: New connection from 172.23.0.1:55564 on port 1883.
+1750004264: New client connected from 172.23.0.1:55564 as connector (p2, c1, k30, u'exampleuser').
+1750004280: Client connector disconnected.
+1750004282: New connection from 172.23.0.1:63696 on port 1883.
+1750004282: New client connected from 172.23.0.1:63696 as connector (p2, c1, k30, u'exampleuser').
+1750004349: Client connector disconnected.
+1750004351: New connection from 172.23.0.1:62220 on port 1883.
+1750004351: New client connected from 172.23.0.1:62220 as connector (p2, c1, k30, u'exampleuser').
+1750004373: Client connector disconnected.
+1750004375: New connection from 172.23.0.1:59752 on port 1883.
+1750004375: New client connected from 172.23.0.1:59752 as connector (p2, c1, k30, u'exampleuser').
+1750004376: Client connector disconnected.
+1750004458: New connection from 172.23.0.1:65202 on port 1883.
+1750004458: New client connected from 172.23.0.1:65202 as connector (p2, c1, k30, u'exampleuser').
+1750005221: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750007012: Client connector disconnected.
+1750007017: New connection from 172.23.0.1:59372 on port 1883.
+1750007017: New client connected from 172.23.0.1:59372 as connector (p2, c1, k30, u'exampleuser').
+1750007022: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750008823: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750009199: Client connector disconnected.
+1750009200: New connection from 172.23.0.1:56144 on port 1883.
+1750009200: New client connected from 172.23.0.1:56144 as connector (p2, c1, k30, u'exampleuser').
+1750009255: Client connector disconnected.
+1750009257: New connection from 172.23.0.1:56370 on port 1883.
+1750009257: New client connected from 172.23.0.1:56370 as connector (p2, c1, k30, u'exampleuser').
+1750009439: Client connector disconnected.
+1750009492: New connection from 172.23.0.1:60082 on port 1883.
+1750009492: New client connected from 172.23.0.1:60082 as connector (p2, c1, k30, u'exampleuser').
+1750009512: Client connector disconnected.
+1750009513: New connection from 172.23.0.1:60102 on port 1883.
+1750009513: New client connected from 172.23.0.1:60102 as connector (p2, c1, k30, u'exampleuser').
+1750009743: Client connector disconnected.
+1750009745: New connection from 172.23.0.1:57042 on port 1883.
+1750009745: New client connected from 172.23.0.1:57042 as connector (p2, c1, k30, u'exampleuser').
+1750009756: Client connector disconnected.
+1750009759: New connection from 172.23.0.1:59156 on port 1883.
+1750009759: New client connected from 172.23.0.1:59156 as connector (p2, c1, k30, u'exampleuser').
+1750009767: Client connector disconnected.
+1750009773: New connection from 172.23.0.1:57704 on port 1883.
+1750009773: New client connected from 172.23.0.1:57704 as connector (p2, c1, k30, u'exampleuser').
+1750009773: Client connector disconnected.
+1750010624: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750011255: mosquitto version 2.0.21 terminating
+1750011255: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750011363: mosquitto version 2.0.21 starting
+1750011363: Config loaded from /mosquitto/config/mosquitto.conf.
+1750011363: Opening ipv4 listen socket on port 1883.
+1750011363: Opening ipv6 listen socket on port 1883.
+1750011363: mosquitto version 2.0.21 running
+1750011363: New connection from 172.23.0.1:56328 on port 1883.
+1750011363: Client <unknown> closed its connection.
+1750013083: New connection from 172.23.0.1:56596 on port 1883.
+1750013083: New client connected from 172.23.0.1:56596 as connector (p2, c1, k30, u'exampleuser').
+1750013119: Client connector disconnected.
+1750013122: New connection from 172.23.0.1:64886 on port 1883.
+1750013122: New client connected from 172.23.0.1:64886 as connector (p2, c1, k30, u'exampleuser').
+1750013164: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750013231: Client connector disconnected.
+1750013233: New connection from 172.23.0.1:59650 on port 1883.
+1750013233: New client connected from 172.23.0.1:59650 as connector (p2, c1, k30, u'exampleuser').
+1750013239: Client connector disconnected.
+1750013563: New connection from 172.23.0.1:64018 on port 1883.
+1750013563: New client connected from 172.23.0.1:64018 as connector (p2, c1, k30, u'exampleuser').
+1750013739: Client connector disconnected.
+1750013741: New connection from 172.23.0.1:63988 on port 1883.
+1750013741: New client connected from 172.23.0.1:63988 as connector (p2, c1, k30, u'exampleuser').
+1750014139: Client connector disconnected.
+1750014153: New connection from 172.23.0.1:63010 on port 1883.
+1750014153: New client connected from 172.23.0.1:63010 as connector (p2, c1, k30, u'exampleuser').
+1750014159: Client connector disconnected.
+1750014965: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750015786: New connection from 172.23.0.1:61892 on port 1883.
+1750015786: New client connected from 172.23.0.1:61892 as connector (p2, c1, k30, u'exampleuser').
+1750015786: Client connector disconnected.
+1750015974: New connection from 172.23.0.1:64374 on port 1883.
+1750015974: New client connected from 172.23.0.1:64374 as connector (p2, c1, k30, u'exampleuser').
+1750016079: Client connector disconnected.
+1750016080: New connection from 172.23.0.1:60362 on port 1883.
+1750016080: New client connected from 172.23.0.1:60362 as connector (p2, c1, k30, u'exampleuser').
+1750016118: Client connector disconnected.
+1750016120: New connection from 172.23.0.1:56198 on port 1883.
+1750016120: New client connected from 172.23.0.1:56198 as connector (p2, c1, k30, u'exampleuser').
+1750016134: Client connector disconnected.
+1750016136: New connection from 172.23.0.1:64308 on port 1883.
+1750016136: New client connected from 172.23.0.1:64308 as connector (p2, c1, k30, u'exampleuser').
+1750016149: Client connector disconnected.
+1750016151: New connection from 172.23.0.1:55014 on port 1883.
+1750016151: New client connected from 172.23.0.1:55014 as connector (p2, c1, k30, u'exampleuser').
+1750016167: Client connector disconnected.
+1750016171: New connection from 172.23.0.1:57910 on port 1883.
+1750016171: New client connected from 172.23.0.1:57910 as connector (p2, c1, k30, u'exampleuser').
+1750016766: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750017746: Client connector disconnected.
+1750017751: New connection from 172.23.0.1:59636 on port 1883.
+1750017751: New client connected from 172.23.0.1:59636 as connector (p2, c1, k30, u'exampleuser').
+1750017862: Client connector disconnected.
+1750017864: New connection from 172.23.0.1:56038 on port 1883.
+1750017864: New client connected from 172.23.0.1:56038 as connector (p2, c1, k30, u'exampleuser').
+1750017952: Client connector disconnected.
+1750017954: New connection from 172.23.0.1:63534 on port 1883.
+1750017954: New client connected from 172.23.0.1:63534 as connector (p2, c1, k30, u'exampleuser').
+1750017961: Client connector disconnected.
+1750017979: New connection from 172.23.0.1:55632 on port 1883.
+1750017979: New client connected from 172.23.0.1:55632 as connector (p2, c1, k30, u'exampleuser').
+1750018004: Client connector disconnected.
+1750018006: New connection from 172.23.0.1:61520 on port 1883.
+1750018006: New client connected from 172.23.0.1:61520 as connector (p2, c1, k30, u'exampleuser').
+1750018210: Client connector disconnected.
+1750018212: New connection from 172.23.0.1:63576 on port 1883.
+1750018212: New client connected from 172.23.0.1:63576 as connector (p2, c1, k30, u'exampleuser').
+1750018220: Client connector disconnected.
+1750018223: New connection from 172.23.0.1:59612 on port 1883.
+1750018223: New client connected from 172.23.0.1:59612 as connector (p2, c1, k30, u'exampleuser').
+1750018224: Client connector disconnected.
+1750018237: New connection from 172.23.0.1:58304 on port 1883.
+1750018237: New client connected from 172.23.0.1:58304 as connector (p2, c1, k30, u'exampleuser').
+1750018247: Client connector disconnected.
+1750018249: New connection from 172.23.0.1:57336 on port 1883.
+1750018249: New client connected from 172.23.0.1:57336 as connector (p2, c1, k30, u'exampleuser').
+1750018414: Client connector disconnected.
+1750018416: New connection from 172.23.0.1:56980 on port 1883.
+1750018416: New client connected from 172.23.0.1:56980 as connector (p2, c1, k30, u'exampleuser').
+1750018421: Client connector disconnected.
+1750018423: New connection from 172.23.0.1:63302 on port 1883.
+1750018423: New client connected from 172.23.0.1:63302 as connector (p2, c1, k30, u'exampleuser').
+1750018429: Client connector disconnected.
+1750018430: New connection from 172.23.0.1:63304 on port 1883.
+1750018430: New client connected from 172.23.0.1:63304 as connector (p2, c1, k30, u'exampleuser').
+1750018478: Client connector disconnected.
+1750018481: New connection from 172.23.0.1:60478 on port 1883.
+1750018481: New client connected from 172.23.0.1:60478 as connector (p2, c1, k30, u'exampleuser').
+1750018562: Client connector disconnected.
+1750018563: New connection from 172.23.0.1:60198 on port 1883.
+1750018563: New client connected from 172.23.0.1:60198 as connector (p2, c1, k30, u'exampleuser').
+1750018567: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750018572: Client connector disconnected.
+1750018574: New connection from 172.23.0.1:55092 on port 1883.
+1750018574: New client connected from 172.23.0.1:55092 as connector (p2, c1, k30, u'exampleuser').
+1750018620: Client connector disconnected.
+1750018622: New connection from 172.23.0.1:57244 on port 1883.
+1750018622: New client connected from 172.23.0.1:57244 as connector (p2, c1, k30, u'exampleuser').
+1750018668: Client connector disconnected.
+1750018670: New connection from 172.23.0.1:62628 on port 1883.
+1750018670: New client connected from 172.23.0.1:62628 as connector (p2, c1, k30, u'exampleuser').
+1750018679: Client connector disconnected.
+1750018681: New connection from 172.23.0.1:65470 on port 1883.
+1750018681: New client connected from 172.23.0.1:65470 as connector (p2, c1, k30, u'exampleuser').
+1750018759: Client connector disconnected.
+1750018760: New connection from 172.23.0.1:62240 on port 1883.
+1750018760: New client connected from 172.23.0.1:62240 as connector (p2, c1, k30, u'exampleuser').
+1750018928: Client connector disconnected.
+1750018930: New connection from 172.23.0.1:64256 on port 1883.
+1750018930: New client connected from 172.23.0.1:64256 as connector (p2, c1, k30, u'exampleuser').
+1750018945: Client connector disconnected.
+1750018946: New connection from 172.23.0.1:65226 on port 1883.
+1750018946: New client connected from 172.23.0.1:65226 as connector (p2, c1, k30, u'exampleuser').
+1750018970: Client connector disconnected.
+1750018971: New connection from 172.23.0.1:58834 on port 1883.
+1750018971: New client connected from 172.23.0.1:58834 as connector (p2, c1, k30, u'exampleuser').
+1750019089: Client connector disconnected.
+1750019097: New connection from 172.23.0.1:60576 on port 1883.
+1750019097: New client connected from 172.23.0.1:60576 as connector (p2, c1, k30, u'exampleuser').
+1750019410: Client connector disconnected.
+1750064561: mosquitto version 2.0.21 starting
+1750064561: Config loaded from /mosquitto/config/mosquitto.conf.
+1750064561: Opening ipv4 listen socket on port 1883.
+1750064561: Opening ipv6 listen socket on port 1883.
+1750064561: mosquitto version 2.0.21 running
+1750064603: New connection from 172.23.0.1:64044 on port 1883.
+1750064603: New client connected from 172.23.0.1:64044 as connector (p2, c1, k30, u'exampleuser').
+1750064618: New connection from 172.23.0.1:55982 on port 1883.
+1750064618: New client connected from 172.23.0.1:55982 as test (p2, c1, k60).
+1750064618: Client test disconnected.
+1750065231: Client connector disconnected.
+1750065236: New connection from 172.23.0.1:60550 on port 1883.
+1750065236: New client connected from 172.23.0.1:60550 as connector (p2, c1, k30, u'exampleuser').
+1750065879: Client connector disconnected.
+1750065881: New connection from 172.23.0.1:60070 on port 1883.
+1750065881: New client connected from 172.23.0.1:60070 as connector (p2, c1, k30, u'exampleuser').
+1750065909: Client connector disconnected.
+1750065910: New connection from 172.23.0.1:64272 on port 1883.
+1750065910: New client connected from 172.23.0.1:64272 as connector (p2, c1, k30, u'exampleuser').
+1750066004: Client connector disconnected.
+1750066006: New connection from 172.23.0.1:64876 on port 1883.
+1750066006: New client connected from 172.23.0.1:64876 as connector (p2, c1, k30, u'exampleuser').
+1750066007: Client connector disconnected.
+1750066015: New connection from 172.23.0.1:64288 on port 1883.
+1750066015: New client connected from 172.23.0.1:64288 as connector (p2, c1, k30, u'exampleuser').
+1750066087: Client connector disconnected.
+1750066089: New connection from 172.23.0.1:58536 on port 1883.
+1750066089: New client connected from 172.23.0.1:58536 as connector (p2, c1, k30, u'exampleuser').
+1750066362: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750066883: Client connector disconnected.
+1750066889: New connection from 172.23.0.1:57512 on port 1883.
+1750066889: New client connected from 172.23.0.1:57512 as connector (p2, c1, k30, u'exampleuser').
+1750067149: Client connector disconnected.
+1750067151: New connection from 172.23.0.1:60288 on port 1883.
+1750067151: New client connected from 172.23.0.1:60288 as connector (p2, c1, k30, u'exampleuser').
+1750067278: Client connector disconnected.
+1750067279: New connection from 172.23.0.1:55062 on port 1883.
+1750067279: New client connected from 172.23.0.1:55062 as connector (p2, c1, k30, u'exampleuser').
+1750067460: Client connector disconnected.
+1750067462: New connection from 172.23.0.1:64998 on port 1883.
+1750067462: New client connected from 172.23.0.1:64998 as connector (p2, c1, k30, u'exampleuser').
+1750067837: Client connector disconnected.
+1750067838: New connection from 172.23.0.1:59852 on port 1883.
+1750067838: New client connected from 172.23.0.1:59852 as connector (p2, c1, k30, u'exampleuser').
+1750068163: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750069964: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750070613: Client connector disconnected.
+1750070615: New connection from 172.23.0.1:62950 on port 1883.
+1750070615: New client connected from 172.23.0.1:62950 as connector (p2, c1, k30, u'exampleuser').
+1750070623: New connection from 172.23.0.1:63680 on port 1883.
+1750070623: New client connected from 172.23.0.1:63680 as test (p2, c1, k60).
+1750070623: Client test disconnected.
+1750070675: Client connector disconnected.
+1750070678: New connection from 172.23.0.1:58360 on port 1883.
+1750070678: New client connected from 172.23.0.1:58360 as connector (p2, c1, k30, u'exampleuser').
+1750070691: New connection from 172.23.0.1:60432 on port 1883.
+1750070691: New client connected from 172.23.0.1:60432 as test (p2, c1, k60).
+1750070691: Client test disconnected.
+1750070717: New connection from 172.23.0.1:62442 on port 1883.
+1750070717: New client connected from 172.23.0.1:62442 as test (p2, c1, k60).
+1750070717: Client test disconnected.
+1750070852: New connection from 172.23.0.1:59912 on port 1883.
+1750070852: New client connected from 172.23.0.1:59912 as test (p2, c1, k60).
+1750070852: Client test disconnected.
+1750070870: New connection from 172.23.0.1:55874 on port 1883.
+1750070870: New client connected from 172.23.0.1:55874 as test (p2, c1, k60).
+1750070870: Client test disconnected.
+1750070974: Client connector disconnected.
+1750070976: New connection from 172.23.0.1:58034 on port 1883.
+1750070976: New client connected from 172.23.0.1:58034 as test (p2, c1, k60).
+1750070976: Client test disconnected.
+1750070981: New connection from 172.23.0.1:64432 on port 1883.
+1750070981: New client connected from 172.23.0.1:64432 as connector (p2, c1, k30, u'exampleuser').
+1750070983: New connection from 172.23.0.1:64444 on port 1883.
+1750070983: New client connected from 172.23.0.1:64444 as test (p2, c1, k60).
+1750070983: Client test disconnected.
+1750071038: New connection from 172.23.0.1:63852 on port 1883.
+1750071038: New client connected from 172.23.0.1:63852 as test (p2, c1, k60).
+1750071038: Client test disconnected.
+1750071148: New connection from 172.23.0.1:64840 on port 1883.
+1750071148: New client connected from 172.23.0.1:64840 as test (p2, c1, k60).
+1750071148: Client test disconnected.
+1750071155: New connection from 172.23.0.1:58076 on port 1883.
+1750071155: New client connected from 172.23.0.1:58076 as test (p2, c1, k60).
+1750071155: Client test disconnected.
+1750071418: Client connector disconnected.
+1750071419: New connection from 172.23.0.1:56718 on port 1883.
+1750071419: New client connected from 172.23.0.1:56718 as test (p2, c1, k60).
+1750071419: Client test disconnected.
+1750071422: New connection from 172.23.0.1:56734 on port 1883.
+1750071422: New client connected from 172.23.0.1:56734 as connector (p2, c1, k30, u'exampleuser').
+1750071424: New connection from 172.23.0.1:56746 on port 1883.
+1750071424: New client connected from 172.23.0.1:56746 as test (p2, c1, k60).
+1750071424: Client test disconnected.
+1750071450: Client connector disconnected.
+1750071452: New connection from 172.23.0.1:55252 on port 1883.
+1750071452: New client connected from 172.23.0.1:55252 as connector (p2, c1, k30, u'exampleuser').
+1750071454: New connection from 172.23.0.1:55256 on port 1883.
+1750071454: New client connected from 172.23.0.1:55256 as test (p2, c1, k60).
+1750071454: Client test disconnected.
+1750071765: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750072178: Client connector disconnected.
+1750072181: New connection from 172.23.0.1:63404 on port 1883.
+1750072181: New client connected from 172.23.0.1:63404 as connector (p2, c1, k30, u'exampleuser').
+1750072183: New connection from 172.23.0.1:63410 on port 1883.
+1750072183: New client connected from 172.23.0.1:63410 as test (p2, c1, k60).
+1750072183: Client test disconnected.
+1750072219: New connection from 172.23.0.1:59026 on port 1883.
+1750072219: New client connected from 172.23.0.1:59026 as test (p2, c1, k60).
+1750072219: Client test disconnected.
+1750072287: Client connector disconnected.
+1750072291: New connection from 172.23.0.1:65090 on port 1883.
+1750072291: New client connected from 172.23.0.1:65090 as connector (p2, c1, k30, u'exampleuser').
+1750072294: New connection from 172.23.0.1:65094 on port 1883.
+1750072294: New client connected from 172.23.0.1:65094 as test (p2, c1, k60).
+1750072294: Client test disconnected.
+1750072403: Client connector disconnected.
+1750072405: New connection from 172.23.0.1:61140 on port 1883.
+1750072405: New client connected from 172.23.0.1:61140 as connector (p2, c1, k30, u'exampleuser').
+1750072409: New connection from 172.23.0.1:62042 on port 1883.
+1750072409: New client connected from 172.23.0.1:62042 as test (p2, c1, k60).
+1750072409: Client test disconnected.
+1750072556: Client connector disconnected.
+1750072558: New connection from 172.23.0.1:65460 on port 1883.
+1750072558: New client connected from 172.23.0.1:65460 as connector (p2, c1, k30, u'exampleuser').
+1750072560: New connection from 172.23.0.1:65472 on port 1883.
+1750072560: New client connected from 172.23.0.1:65472 as test (p2, c1, k60).
+1750072560: Client test disconnected.
+1750072848: Client connector disconnected.
+1750072850: New connection from 172.23.0.1:55736 on port 1883.
+1750072850: New client connected from 172.23.0.1:55736 as connector (p2, c1, k30, u'exampleuser').
+1750072853: New connection from 172.23.0.1:55738 on port 1883.
+1750072853: New client connected from 172.23.0.1:55738 as test (p2, c1, k60).
+1750072853: Client test disconnected.
+1750072888: New connection from 172.23.0.1:56426 on port 1883.
+1750072888: New client connected from 172.23.0.1:56426 as test (p2, c1, k60).
+1750072888: Client test disconnected.
+1750072900: New connection from 172.23.0.1:61360 on port 1883.
+1750072900: New client connected from 172.23.0.1:61360 as test (p2, c1, k60).
+1750072900: Client test disconnected.
+1750073046: Client connector disconnected.
+1750073048: New connection from 172.23.0.1:58092 on port 1883.
+1750073048: New client connected from 172.23.0.1:58092 as connector (p2, c1, k30, u'exampleuser').
+1750073050: New connection from 172.23.0.1:58098 on port 1883.
+1750073050: New client connected from 172.23.0.1:58098 as test (p2, c1, k60).
+1750073050: Client test disconnected.
+1750073111: Client connector disconnected.
+1750073113: New connection from 172.23.0.1:58278 on port 1883.
+1750073113: New client connected from 172.23.0.1:58278 as connector (p2, c1, k30, u'exampleuser').
+1750073115: New connection from 172.23.0.1:58288 on port 1883.
+1750073115: New client connected from 172.23.0.1:58288 as test (p2, c1, k60).
+1750073115: Client test disconnected.
+1750073240: Client connector disconnected.
+1750073242: New connection from 172.23.0.1:61258 on port 1883.
+1750073242: New client connected from 172.23.0.1:61258 as connector (p2, c1, k30, u'exampleuser').
+1750073244: New connection from 172.23.0.1:61272 on port 1883.
+1750073244: New client connected from 172.23.0.1:61272 as test (p2, c1, k60).
+1750073244: Client test disconnected.
+1750073429: Client connector disconnected.
+1750073463: New connection from 172.23.0.1:58998 on port 1883.
+1750073463: New client connected from 172.23.0.1:58998 as connector (p2, c1, k30, u'exampleuser').
+1750073465: New connection from 172.23.0.1:59014 on port 1883.
+1750073465: New client connected from 172.23.0.1:59014 as test (p2, c1, k60).
+1750073465: Client test disconnected.
+1750073525: New connection from 172.23.0.1:57434 on port 1883.
+1750073525: New client connected from 172.23.0.1:57434 as test (p2, c1, k60).
+1750073525: Client test disconnected.
+1750073537: New connection from 172.23.0.1:64468 on port 1883.
+1750073537: New client connected from 172.23.0.1:64468 as test (p2, c1, k60).
+1750073537: Client test disconnected.
+1750073566: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750073573: New connection from 172.23.0.1:55754 on port 1883.
+1750073573: New client connected from 172.23.0.1:55754 as test (p2, c1, k60).
+1750073573: Client test disconnected.
+1750073586: New connection from 172.23.0.1:58174 on port 1883.
+1750073586: New client connected from 172.23.0.1:58174 as test (p2, c1, k60).
+1750073586: Client test disconnected.
+1750073610: New connection from 172.23.0.1:63966 on port 1883.
+1750073610: New client connected from 172.23.0.1:63966 as test (p2, c1, k60).
+1750073610: Client test disconnected.
+1750073641: New connection from 172.23.0.1:57578 on port 1883.
+1750073641: New client connected from 172.23.0.1:57578 as test (p2, c1, k60).
+1750073641: Client test disconnected.
+1750075367: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750075992: Client connector disconnected.
+1750075996: New connection from 172.23.0.1:57296 on port 1883.
+1750075996: New client connected from 172.23.0.1:57296 as connector (p2, c1, k30, u'exampleuser').
+1750075998: New connection from 172.23.0.1:63628 on port 1883.
+1750075998: New client connected from 172.23.0.1:63628 as test (p2, c1, k60).
+1750075998: Client test disconnected.
+1750076893: Client connector disconnected.
+1750076896: New connection from 172.23.0.1:55740 on port 1883.
+1750076896: New client connected from 172.23.0.1:55740 as connector (p2, c1, k30, u'exampleuser').
+1750076950: Client connector disconnected.
+1750076952: New connection from 172.23.0.1:58112 on port 1883.
+1750076952: New client connected from 172.23.0.1:58112 as connector (p2, c1, k30, u'exampleuser').
+1750076980: Client connector disconnected.
+1750076982: New connection from 172.23.0.1:55944 on port 1883.
+1750076982: New client connected from 172.23.0.1:55944 as connector (p2, c1, k30, u'exampleuser').
+1750077039: Client connector disconnected.
+1750077041: New connection from 172.23.0.1:61612 on port 1883.
+1750077041: New client connected from 172.23.0.1:61612 as connector (p2, c1, k30, u'exampleuser').
+1750077103: Client connector disconnected.
+1750077105: New connection from 172.23.0.1:57628 on port 1883.
+1750077105: New client connected from 172.23.0.1:57628 as connector (p2, c1, k30, u'exampleuser').
+1750077168: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750077246: Client connector disconnected.
+1750077248: New connection from 172.23.0.1:56972 on port 1883.
+1750077248: New client connected from 172.23.0.1:56972 as connector (p2, c1, k30, u'exampleuser').
+1750077270: Client connector disconnected.
+1750077272: New connection from 172.23.0.1:59042 on port 1883.
+1750077272: New client connected from 172.23.0.1:59042 as connector (p2, c1, k30, u'exampleuser').
+1750077299: Client connector disconnected.
+1750077301: New connection from 172.23.0.1:63642 on port 1883.
+1750077301: New client connected from 172.23.0.1:63642 as connector (p2, c1, k30, u'exampleuser').
+1750077335: Client connector disconnected.
+1750077336: New connection from 172.23.0.1:64860 on port 1883.
+1750077336: New client connected from 172.23.0.1:64860 as connector (p2, c1, k30, u'exampleuser').
+1750077417: Client connector disconnected.
+1750077418: New connection from 172.23.0.1:61828 on port 1883.
+1750077418: New client connected from 172.23.0.1:61828 as connector (p2, c1, k30, u'exampleuser').
+1750077442: Client connector disconnected.
+1750077445: New connection from 172.23.0.1:55714 on port 1883.
+1750077445: New client connected from 172.23.0.1:55714 as connector (p2, c1, k30, u'exampleuser').
+1750077502: Client connector disconnected.
+1750077504: New connection from 172.23.0.1:57898 on port 1883.
+1750077504: New client connected from 172.23.0.1:57898 as connector (p2, c1, k30, u'exampleuser').
+1750077876: Client connector disconnected.
+1750077877: New connection from 172.23.0.1:57968 on port 1883.
+1750077877: New client connected from 172.23.0.1:57968 as connector (p2, c1, k30, u'exampleuser').
+1750078688: Client connector disconnected.
+1750078692: New connection from 172.23.0.1:58808 on port 1883.
+1750078692: New client connected from 172.23.0.1:58808 as connector (p2, c1, k30, u'exampleuser').
+1750078692: Client connector disconnected.
+1750078969: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750080262: New connection from 172.23.0.1:64968 on port 1883.
+1750080262: New client connected from 172.23.0.1:64968 as connector (p2, c1, k30, u'exampleuser').
+1750080266: Client connector disconnected.
+1750080310: New connection from 172.23.0.1:58670 on port 1883.
+1750080310: New client connected from 172.23.0.1:58670 as connector (p2, c1, k30, u'exampleuser').
+1750080313: Client connector disconnected.
+1750080323: New connection from 172.23.0.1:65496 on port 1883.
+1750080323: New client connected from 172.23.0.1:65496 as connector (p2, c1, k30, u'exampleuser').
+1750080335: Client connector disconnected.
+1750080387: New connection from 172.23.0.1:61488 on port 1883.
+1750080387: New client connected from 172.23.0.1:61488 as connector (p2, c1, k30, u'exampleuser').
+1750080389: Client connector disconnected.
+1750080392: New connection from 172.23.0.1:57790 on port 1883.
+1750080392: New client connected from 172.23.0.1:57790 as connector (p2, c1, k30, u'exampleuser').
+1750080394: Client connector disconnected.
+1750080401: New connection from 172.23.0.1:64400 on port 1883.
+1750080401: New client connected from 172.23.0.1:64400 as connector (p2, c1, k30, u'exampleuser').
+1750080404: Client connector disconnected.
+1750080409: New connection from 172.23.0.1:62404 on port 1883.
+1750080409: New client connected from 172.23.0.1:62404 as connector (p2, c1, k30, u'exampleuser').
+1750080410: Client connector disconnected.
+1750080770: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750080922: New connection from 172.23.0.1:58418 on port 1883.
+1750080922: New client connected from 172.23.0.1:58418 as connector (p2, c1, k30, u'exampleuser').
+1750080945: Client connector disconnected.
+1750080946: New connection from 172.23.0.1:57900 on port 1883.
+1750080946: New client connected from 172.23.0.1:57900 as connector (p2, c1, k30, u'exampleuser').
+1750081112: Client connector disconnected.
+1750081122: New connection from 172.23.0.1:63940 on port 1883.
+1750081122: New client connected from 172.23.0.1:63940 as connector (p2, c1, k30, u'exampleuser').
+1750081330: Client connector disconnected.
+1750081350: New connection from 172.23.0.1:63984 on port 1883.
+1750081350: New client connected from 172.23.0.1:63984 as connector (p2, c1, k30, u'exampleuser').
+1750081460: Client connector disconnected.
+1750081462: New connection from 172.23.0.1:61048 on port 1883.
+1750081462: New client connected from 172.23.0.1:61048 as connector (p2, c1, k30, u'exampleuser').
+1750081477: Client connector disconnected.
+1750081479: New connection from 172.23.0.1:56710 on port 1883.
+1750081479: New client connected from 172.23.0.1:56710 as connector (p2, c1, k30, u'exampleuser').
+1750081513: Client connector disconnected.
+1750081514: New connection from 172.23.0.1:61358 on port 1883.
+1750081514: New client connected from 172.23.0.1:61358 as connector (p2, c1, k30, u'exampleuser').
+1750081516: Client connector disconnected.
+1750081667: New connection from 172.23.0.1:57986 on port 1883.
+1750081667: New client connected from 172.23.0.1:57986 as connector (p2, c1, k30, u'exampleuser').
+1750081673: Client connector disconnected.
+1750081674: New connection from 172.23.0.1:62970 on port 1883.
+1750081674: New client connected from 172.23.0.1:62970 as connector (p2, c1, k30, u'exampleuser').
+1750081806: Client connector disconnected.
+1750081808: New connection from 172.23.0.1:59982 on port 1883.
+1750081808: New client connected from 172.23.0.1:59982 as connector (p2, c1, k30, u'exampleuser').
+1750081818: Client connector disconnected.
+1750081820: New connection from 172.23.0.1:61080 on port 1883.
+1750081820: New client connected from 172.23.0.1:61080 as connector (p2, c1, k30, u'exampleuser').
+1750082091: Client connector disconnected.
+1750082571: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750083022: New connection from 172.23.0.1:58176 on port 1883.
+1750083022: New client connected from 172.23.0.1:58176 as connector (p2, c1, k30, u'exampleuser').
+1750083205: Client connector disconnected.
+1750083741: New connection from 172.23.0.1:57012 on port 1883.
+1750083741: New client connected from 172.23.0.1:57012 as connector (p2, c1, k30, u'exampleuser').
+1750083787: Client connector disconnected.
+1750083788: New connection from 172.23.0.1:60684 on port 1883.
+1750083788: New client connected from 172.23.0.1:60684 as connector (p2, c1, k30, u'exampleuser').
+1750083815: Client connector disconnected.
+1750083817: New connection from 172.23.0.1:64384 on port 1883.
+1750083817: New client connected from 172.23.0.1:64384 as connector (p2, c1, k30, u'exampleuser').
+1750083891: Client connector disconnected.
+1750083893: New connection from 172.23.0.1:56602 on port 1883.
+1750083893: New client connected from 172.23.0.1:56602 as connector (p2, c1, k30, u'exampleuser').
+1750083980: Client connector disconnected.
+1750083984: New connection from 172.23.0.1:65058 on port 1883.
+1750083984: New client connected from 172.23.0.1:65058 as connector (p2, c1, k30, u'exampleuser').
+1750084372: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750084408: Client connector disconnected.
+1750084410: New connection from 172.23.0.1:56876 on port 1883.
+1750084410: New client connected from 172.23.0.1:56876 as connector (p2, c1, k30, u'exampleuser').
+1750084513: Client connector disconnected.
+1750084515: New connection from 172.23.0.1:55922 on port 1883.
+1750084515: New client connected from 172.23.0.1:55922 as connector (p2, c1, k30, u'exampleuser').
+1750084832: Client connector disconnected.
+1750084833: New connection from 172.23.0.1:57040 on port 1883.
+1750084833: New client connected from 172.23.0.1:57040 as connector (p2, c1, k30, u'exampleuser').
+1750084934: Client connector disconnected.
+1750084935: New connection from 172.23.0.1:58318 on port 1883.
+1750084935: New client connected from 172.23.0.1:58318 as connector (p2, c1, k30, u'exampleuser').
+1750085080: Client connector disconnected.
+1750085082: New connection from 172.23.0.1:56120 on port 1883.
+1750085082: New client connected from 172.23.0.1:56120 as connector (p2, c1, k30, u'exampleuser').
+1750085090: Client connector disconnected.
+1750085092: New connection from 172.23.0.1:60630 on port 1883.
+1750085092: New client connected from 172.23.0.1:60630 as connector (p2, c1, k30, u'exampleuser').
+1750085181: Client connector disconnected.
+1750085182: New connection from 172.23.0.1:59034 on port 1883.
+1750085182: New client connected from 172.23.0.1:59034 as connector (p2, c1, k30, u'exampleuser').
+1750085235: Client connector disconnected.
+1750085236: New connection from 172.23.0.1:59448 on port 1883.
+1750085236: New client connected from 172.23.0.1:59448 as connector (p2, c1, k30, u'exampleuser').
+1750085290: Client connector disconnected.
+1750085292: New connection from 172.23.0.1:57338 on port 1883.
+1750085292: New client connected from 172.23.0.1:57338 as connector (p2, c1, k30, u'exampleuser').
+1750085309: Client connector disconnected.
+1750085363: New connection from 172.23.0.1:62324 on port 1883.
+1750085363: New client connected from 172.23.0.1:62324 as connector (p2, c1, k30, u'exampleuser').
+1750085399: Client connector disconnected.
+1750085525: New connection from 172.23.0.1:57456 on port 1883.
+1750085525: New client connected from 172.23.0.1:57456 as connector (p2, c1, k30, u'exampleuser').
+1750085535: Client connector disconnected.
+1750085536: New connection from 172.23.0.1:59120 on port 1883.
+1750085536: New client connected from 172.23.0.1:59120 as connector (p2, c1, k30, u'exampleuser').
+1750085537: Client connector disconnected.
+1750086173: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750087313: New connection from 172.23.0.1:55752 on port 1883.
+1750087313: New client connected from 172.23.0.1:55752 as connector (p2, c1, k30, u'exampleuser').
+1750087394: Client connector disconnected.
+1750087422: New connection from 172.23.0.1:61636 on port 1883.
+1750087422: New client connected from 172.23.0.1:61636 as connector (p2, c1, k30, u'exampleuser').
+1750087439: Client connector disconnected.
+1750087440: New connection from 172.23.0.1:55920 on port 1883.
+1750087440: New client connected from 172.23.0.1:55920 as connector (p2, c1, k30, u'exampleuser').
+1750087528: Client connector disconnected.
+1750087530: New connection from 172.23.0.1:59952 on port 1883.
+1750087530: New client connected from 172.23.0.1:59952 as connector (p2, c1, k30, u'exampleuser').
+1750087546: Client connector disconnected.
+1750087549: New connection from 172.23.0.1:58622 on port 1883.
+1750087549: New client connected from 172.23.0.1:58622 as connector (p2, c1, k30, u'exampleuser').
+1750087559: Client connector disconnected.
+1750087578: New connection from 172.23.0.1:60908 on port 1883.
+1750087578: New client connected from 172.23.0.1:60908 as connector (p2, c1, k30, u'exampleuser').
+1750087585: Client connector disconnected.
+1750087585: New connection from 172.23.0.1:60922 on port 1883.
+1750087585: New client connected from 172.23.0.1:60922 as connector (p2, c1, k30, u'exampleuser').
+1750087594: Client connector disconnected.
+1750087595: New connection from 172.23.0.1:63488 on port 1883.
+1750087595: New client connected from 172.23.0.1:63488 as connector (p2, c1, k30, u'exampleuser').
+1750087596: Client connector disconnected.
+1750087974: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750087999: New connection from 172.23.0.1:63678 on port 1883.
+1750087999: New client connected from 172.23.0.1:63678 as connector (p2, c1, k30, u'exampleuser').
+1750088046: Client connector closed its connection.
+1750088055: New connection from 172.23.0.1:62506 on port 1883.
+1750088055: New client connected from 172.23.0.1:62506 as connector (p2, c1, k30, u'exampleuser').
+1750088084: New connection from 172.23.0.1:57234 on port 1883.
+1750088084: New client connected from 172.23.0.1:57234 as test (p2, c1, k60).
+1750088084: Client test disconnected.
+1750088115: New connection from 172.23.0.1:63340 on port 1883.
+1750088115: New client connected from 172.23.0.1:63340 as test (p2, c1, k60).
+1750088115: Client test disconnected.
+1750088144: New connection from 172.23.0.1:65010 on port 1883.
+1750088144: New client connected from 172.23.0.1:65010 as test (p2, c1, k60).
+1750088144: Client test disconnected.
+1750088254: New connection from 172.23.0.1:62700 on port 1883.
+1750088254: New client connected from 172.23.0.1:62700 as test (p2, c1, k60).
+1750088254: Client test disconnected.
+1750088276: New connection from 172.23.0.1:61804 on port 1883.
+1750088276: New client connected from 172.23.0.1:61804 as test (p2, c1, k60).
+1750088276: Client test disconnected.
+1750088554: Client connector disconnected.
+1750088556: New connection from 172.23.0.1:61252 on port 1883.
+1750088556: New client connected from 172.23.0.1:61252 as connector (p2, c1, k30, u'exampleuser').
+1750088558: New connection from 172.23.0.1:61490 on port 1883.
+1750088558: New client connected from 172.23.0.1:61490 as test (p2, c1, k60).
+1750088558: Client test disconnected.
+1750088916: Client connector disconnected.
+1750088921: New connection from 172.23.0.1:65196 on port 1883.
+1750088921: New client connected from 172.23.0.1:65196 as connector (p2, c1, k30, u'exampleuser').
+1750088926: New connection from 172.23.0.1:65206 on port 1883.
+1750088926: New client connected from 172.23.0.1:65206 as test (p2, c1, k60).
+1750088926: Client test disconnected.
+1750088946: New connection from 172.23.0.1:59144 on port 1883.
+1750088946: New client connected from 172.23.0.1:59144 as test (p2, c1, k60).
+1750088946: Client test disconnected.
+1750088958: New connection from 172.23.0.1:60272 on port 1883.
+1750088958: New client connected from 172.23.0.1:60272 as test (p2, c1, k60).
+1750088958: Client test disconnected.
+1750088962: Client connector disconnected.
+1750088967: New connection from 172.23.0.1:61142 on port 1883.
+1750088967: New client connected from 172.23.0.1:61142 as connector (p2, c1, k30, u'exampleuser').
+1750088975: New connection from 172.23.0.1:61812 on port 1883.
+1750088975: New client connected from 172.23.0.1:61812 as test (p2, c1, k60).
+1750088975: Client test disconnected.
+1750088978: New connection from 172.23.0.1:55168 on port 1883.
+1750088978: New client connected from 172.23.0.1:55168 as test (p2, c1, k60).
+1750088978: Client test disconnected.
+1750089619: Client connector disconnected.
+1750089775: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750090771: New connection from 172.23.0.1:61778 on port 1883.
+1750090771: New client connected from 172.23.0.1:61778 as connector (p2, c1, k30, u'exampleuser').
+1750090781: Client connector disconnected.
+1750091576: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750092480: New connection from 172.23.0.1:56620 on port 1883.
+1750092480: New client connected from 172.23.0.1:56620 as connector (p2, c1, k30, u'exampleuser').
+1750092495: Client connector disconnected.
+1750092644: New connection from 172.23.0.1:62430 on port 1883.
+1750092644: New client connected from 172.23.0.1:62430 as connector (p2, c1, k30, u'exampleuser').
+1750092649: Client connector disconnected.
+1750093377: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750094296: New connection from 172.23.0.1:56330 on port 1883.
+1750094296: New client connected from 172.23.0.1:56330 as connector (p2, c1, k30, u'exampleuser').
+1750094304: Client connector disconnected.
+1750094306: New connection from 172.23.0.1:61724 on port 1883.
+1750094306: New client connected from 172.23.0.1:61724 as connector (p2, c1, k30, u'exampleuser').
+1750094306: Client connector disconnected.
+1750094421: New connection from 172.23.0.1:57954 on port 1883.
+1750094421: New client connected from 172.23.0.1:57954 as connector (p2, c1, k30, u'exampleuser').
+1750094444: Client connector disconnected.
+1750094446: New connection from 172.23.0.1:57554 on port 1883.
+1750094446: New client connected from 172.23.0.1:57554 as connector (p2, c1, k30, u'exampleuser').
+1750094446: Client connector disconnected.
+1750094477: New connection from 172.23.0.1:57290 on port 1883.
+1750094477: New client connected from 172.23.0.1:57290 as connector (p2, c1, k30, u'exampleuser').
+1750094477: Client connector disconnected.
+1750094794: New connection from 172.23.0.1:59732 on port 1883.
+1750094794: New client connected from 172.23.0.1:59732 as connector (p2, c1, k30, u'exampleuser').
+1750094805: Client connector disconnected.
+1750094807: New connection from 172.23.0.1:64510 on port 1883.
+1750094807: New client connected from 172.23.0.1:64510 as connector (p2, c1, k30, u'exampleuser').
+1750094807: Client connector closed its connection.
+1750095035: New connection from 172.23.0.1:62250 on port 1883.
+1750095035: New client connected from 172.23.0.1:62250 as connector (p2, c1, k30, u'exampleuser').
+1750095055: Client connector disconnected.
+1750095178: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750096979: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750097052: New connection from 172.23.0.1:57332 on port 1883.
+1750097052: New client connected from 172.23.0.1:57332 as connector (p2, c1, k30, u'exampleuser').
+1750097077: Client connector disconnected.
+1750097078: New connection from 172.23.0.1:62538 on port 1883.
+1750097078: New client connected from 172.23.0.1:62538 as connector (p2, c1, k30, u'exampleuser').
+1750097078: Client connector disconnected.
+1750098304: New connection from 172.23.0.1:58582 on port 1883.
+1750098304: New client connected from 172.23.0.1:58582 as connector (p2, c1, k30, u'exampleuser').
+1750098319: Client connector disconnected.
+1750098780: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750099597: New connection from 172.23.0.1:59718 on port 1883.
+1750099597: New client connected from 172.23.0.1:59718 as connector (p2, c1, k30, u'exampleuser').
+1750099597: Client connector closed its connection.
+1750099608: New connection from 172.23.0.1:61918 on port 1883.
+1750099608: New client connected from 172.23.0.1:61918 as connector (p2, c1, k30, u'exampleuser').
+1750099608: Client connector closed its connection.
+1750100581: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750101014: New connection from 172.23.0.1:56846 on port 1883.
+1750101014: New client connected from 172.23.0.1:56846 as connector (p2, c1, k30, u'exampleuser').
+1750101018: Client connector disconnected.
+1750101025: New connection from 172.23.0.1:56716 on port 1883.
+1750101025: New client connected from 172.23.0.1:56716 as connector (p2, c1, k30, u'exampleuser').
+1750101121: Client connector disconnected.
+1750101697: New connection from 172.23.0.1:55926 on port 1883.
+1750101697: New client connected from 172.23.0.1:55926 as connector (p2, c1, k30, u'exampleuser').
+1750101697: Client connector closed its connection.
+1750101729: New connection from 172.23.0.1:62202 on port 1883.
+1750101729: New client connected from 172.23.0.1:62202 as connector (p2, c1, k30, u'exampleuser').
+1750101729: Client connector closed its connection.
+1750101847: New connection from 172.23.0.1:61340 on port 1883.
+1750101847: New client connected from 172.23.0.1:61340 as connector (p2, c1, k30, u'exampleuser').
+1750101847: Client connector closed its connection.
+1750102000: New connection from 172.23.0.1:62904 on port 1883.
+1750102000: New client connected from 172.23.0.1:62904 as connector (p2, c1, k30, u'exampleuser').
+1750102002: Client connector disconnected.
+1750102046: New connection from 172.23.0.1:61334 on port 1883.
+1750102046: New client connected from 172.23.0.1:61334 as connector (p2, c1, k30, u'exampleuser').
+1750102046: Client connector closed its connection.
+1750102086: New connection from 172.23.0.1:57104 on port 1883.
+1750102086: New client connected from 172.23.0.1:57104 as connector (p2, c1, k30, u'exampleuser').
+1750102086: Client connector closed its connection.
+1750102130: New connection from 172.23.0.1:56648 on port 1883.
+1750102130: New client connected from 172.23.0.1:56648 as connector (p2, c1, k30, u'exampleuser').
+1750102131: Client connector disconnected.
+1750102155: New connection from 172.23.0.1:56454 on port 1883.
+1750102155: New client connected from 172.23.0.1:56454 as connector (p2, c1, k30, u'exampleuser').
+1750102167: New connection from 172.23.0.1:59844 on port 1883.
+1750102167: New client connected from 172.23.0.1:59844 as test (p2, c1, k60).
+1750102167: Client test disconnected.
+1750102309: Client connector disconnected.
+1750102313: New connection from 172.23.0.1:58950 on port 1883.
+1750102313: New client connected from 172.23.0.1:58950 as connector (p2, c1, k30, u'exampleuser').
+1750102327: Client connector disconnected.
+1750102370: New connection from 172.23.0.1:65296 on port 1883.
+1750102370: New client connected from 172.23.0.1:65296 as connector (p2, c1, k30, u'exampleuser').
+1750102382: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750103967: Client connector disconnected.
+1750103971: New connection from 172.23.0.1:58952 on port 1883.
+1750103971: New client connected from 172.23.0.1:58952 as connector (p2, c1, k30, u'exampleuser').
+1750103977: New connection from 172.23.0.1:58956 on port 1883.
+1750103977: New client connected from 172.23.0.1:58956 as test (p2, c1, k60).
+1750103977: Client test disconnected.
+1750104183: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750104256: Client connector disconnected.
+1750104258: New connection from 172.23.0.1:58674 on port 1883.
+1750104258: New client connected from 172.23.0.1:58674 as connector (p2, c1, k30, u'exampleuser').
+1750104265: New connection from 172.23.0.1:58690 on port 1883.
+1750104265: New client connected from 172.23.0.1:58690 as test (p2, c1, k60).
+1750104265: Client test disconnected.
+1750104270: New connection from 172.23.0.1:55230 on port 1883.
+1750104270: New client connected from 172.23.0.1:55230 as test (p2, c1, k60).
+1750104270: Client test disconnected.
+1750104719: Client connector disconnected.
+1750104723: New connection from 172.23.0.1:56932 on port 1883.
+1750104723: New client connected from 172.23.0.1:56932 as connector (p2, c1, k30, u'exampleuser').
+1750104776: Client connector disconnected.
+1750104783: New connection from 172.23.0.1:61082 on port 1883.
+1750104783: New client connected from 172.23.0.1:61082 as connector (p2, c1, k30, u'exampleuser').
+1750104784: Client connector disconnected.
+1750105353: New connection from 172.23.0.1:59014 on port 1883.
+1750105353: New client connected from 172.23.0.1:59014 as connector (p2, c1, k30, u'exampleuser').
+1750105356: Client connector disconnected.
+1750105413: New connection from 172.23.0.1:58502 on port 1883.
+1750105413: New client connected from 172.23.0.1:58502 as connector (p2, c1, k30, u'exampleuser').
+1750105453: Client connector disconnected.
+1750105809: New connection from 172.23.0.1:58022 on port 1883.
+1750105809: New client connected from 172.23.0.1:58022 as connector (p2, c1, k30, u'exampleuser').
+1750105825: New connection from 172.23.0.1:59982 on port 1883.
+1750105825: New client connected from 172.23.0.1:59982 as test (p2, c1, k60).
+1750105825: Client test disconnected.
+1750105984: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750106133: Client connector disconnected.
+1750106404: New connection from 172.23.0.1:64526 on port 1883.
+1750106404: New client connected from 172.23.0.1:64526 as connector (p2, c1, k30, u'exampleuser').
+1750106769: Client connector disconnected.
+1750106802: New connection from 172.23.0.1:58574 on port 1883.
+1750106803: New client connected from 172.23.0.1:58574 as connector (p2, c1, k30, u'exampleuser').
+1750106816: New connection from 172.23.0.1:59682 on port 1883.
+1750106816: New client connected from 172.23.0.1:59682 as test (p2, c1, k60).
+1750106816: Client test disconnected.
+1750106886: Client connector disconnected.
+1750106888: New connection from 172.23.0.1:58864 on port 1883.
+1750106888: New client connected from 172.23.0.1:58864 as connector (p2, c1, k30, u'exampleuser').
+1750106888: Client connector closed its connection.
+1750107192: New connection from 172.23.0.1:57932 on port 1883.
+1750107192: New client connected from 172.23.0.1:57932 as connector (p2, c1, k30, u'exampleuser').
+1750107192: Client connector closed its connection.
+1750107284: New connection from 172.23.0.1:55428 on port 1883.
+1750107284: New client connected from 172.23.0.1:55428 as connector (p2, c1, k30, u'exampleuser').
+1750107291: Client connector disconnected.
+1750107335: New connection from 172.23.0.1:58562 on port 1883.
+1750107335: New client connected from 172.23.0.1:58562 as connector (p2, c1, k30, u'exampleuser').
+1750107360: Client connector disconnected.
+1750107362: New connection from 172.23.0.1:59304 on port 1883.
+1750107362: New client connected from 172.23.0.1:59304 as connector (p2, c1, k30, u'exampleuser').
+1750107362: Client connector closed its connection.
+1750107410: New connection from 172.23.0.1:63292 on port 1883.
+1750107410: New client connected from 172.23.0.1:63292 as connector (p2, c1, k30, u'exampleuser').
+1750107410: Client connector closed its connection.
+1750107785: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750107923: New connection from 172.23.0.1:64678 on port 1883.
+1750107923: New client connected from 172.23.0.1:64678 as connector (p2, c1, k30, u'exampleuser').
+1750107931: Client connector disconnected.
+1750107933: New connection from 172.23.0.1:62884 on port 1883.
+1750107933: New client connected from 172.23.0.1:62884 as connector (p2, c1, k30, u'exampleuser').
+1750107933: Client connector closed its connection.
+1750107946: New connection from 172.23.0.1:58570 on port 1883.
+1750107946: New client connected from 172.23.0.1:58570 as connector (p2, c1, k30, u'exampleuser').
+1750107983: Client connector disconnected.
+1750107992: New connection from 172.23.0.1:60100 on port 1883.
+1750107992: New client connected from 172.23.0.1:60100 as connector (p2, c1, k30, u'exampleuser').
+1750108417: Client connector disconnected.
+1750108418: New connection from 172.23.0.1:60376 on port 1883.
+1750108418: New client connected from 172.23.0.1:60376 as connector (p2, c1, k30, u'exampleuser').
+1750108446: Client connector disconnected.
+1750109586: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750111328: New connection from 172.23.0.1:55004 on port 1883.
+1750111328: New client connected from 172.23.0.1:55004 as connector (p2, c1, k30, u'exampleuser').
+1750111333: Client connector disconnected.
+1750111387: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750111409: New connection from 172.23.0.1:56472 on port 1883.
+1750111409: New client connected from 172.23.0.1:56472 as connector (p2, c1, k30, u'exampleuser').
+1750111411: Client connector disconnected.
+1750111459: New connection from 172.23.0.1:60048 on port 1883.
+1750111459: New client connected from 172.23.0.1:60048 as connector (p2, c1, k30, u'exampleuser').
+1750111568: Client connector disconnected.
+1750111571: New connection from 172.23.0.1:63008 on port 1883.
+1750111571: New client connected from 172.23.0.1:63008 as connector (p2, c1, k30, u'exampleuser').
+1750111599: Client connector disconnected.
+1750111601: New connection from 172.23.0.1:60362 on port 1883.
+1750111601: New client connected from 172.23.0.1:60362 as connector (p2, c1, k30, u'exampleuser').
+1750111773: Client connector disconnected.
+1750111775: New connection from 172.23.0.1:57014 on port 1883.
+1750111775: New client connected from 172.23.0.1:57014 as connector (p2, c1, k30, u'exampleuser').
+1750111775: Client connector disconnected.
+1750111807: New connection from 172.23.0.1:60862 on port 1883.
+1750111807: New client connected from 172.23.0.1:60862 as connector (p2, c1, k30, u'exampleuser').
+1750111807: Client connector disconnected.
+1750111861: New connection from 172.23.0.1:57990 on port 1883.
+1750111861: New client connected from 172.23.0.1:57990 as connector (p2, c1, k30, u'exampleuser').
+1750111861: Client connector closed its connection.
+1750111913: New connection from 172.23.0.1:64344 on port 1883.
+1750111913: New client connected from 172.23.0.1:64344 as connector (p2, c1, k30, u'exampleuser').
+1750111913: Client connector disconnected.
+1750112114: New connection from 172.23.0.1:56982 on port 1883.
+1750112114: New client connected from 172.23.0.1:56982 as connector (p2, c1, k30, u'exampleuser').
+1750112114: Client connector disconnected.
+1750112152: New connection from 172.23.0.1:57540 on port 1883.
+1750112152: New client connected from 172.23.0.1:57540 as connector (p2, c1, k30, u'exampleuser').
+1750112159: New connection from 172.23.0.1:56820 on port 1883.
+1750112159: New client connected from 172.23.0.1:56820 as test (p2, c1, k60).
+1750112159: Client test disconnected.
+1750112277: New connection from 172.23.0.1:60250 on port 1883.
+1750112277: New client connected from 172.23.0.1:60250 as test (p2, c1, k60).
+1750112277: Client test disconnected.
+1750112294: Client connector disconnected.
+1750112299: New connection from 172.23.0.1:65528 on port 1883.
+1750112299: New client connected from 172.23.0.1:65528 as connector (p2, c1, k30, u'exampleuser').
+1750112319: Client connector closed its connection.
+1750112329: New connection from 172.23.0.1:63110 on port 1883.
+1750112329: New client connected from 172.23.0.1:63110 as connector (p2, c1, k30, u'exampleuser').
+1750112349: Client connector closed its connection.
+1750112647: New connection from 172.23.0.1:57700 on port 1883.
+1750112647: New client connected from 172.23.0.1:57700 as connector (p2, c1, k30, u'exampleuser').
+1750112650: Client connector closed its connection.
+1750112679: New connection from 172.23.0.1:63306 on port 1883.
+1750112679: New client connected from 172.23.0.1:63306 as connector (p2, c1, k30, u'exampleuser').
+1750112680: Client connector closed its connection.
+1750112691: New connection from 172.23.0.1:62222 on port 1883.
+1750112691: New client connected from 172.23.0.1:62222 as connector (p2, c1, k30, u'exampleuser').
+1750112691: Client connector closed its connection.
+1750112977: New connection from 172.23.0.1:57418 on port 1883.
+1750112977: New client connected from 172.23.0.1:57418 as connector (p2, c1, k30, u'exampleuser').
+1750112982: Client connector closed its connection.
+1750113003: New connection from 172.23.0.1:56240 on port 1883.
+1750113003: New client connected from 172.23.0.1:56240 as connector (p2, c1, k30, u'exampleuser').
+1750113011: New connection from 172.23.0.1:57362 on port 1883.
+1750113011: New client connected from 172.23.0.1:57362 as test (p2, c1, k60).
+1750113011: Client test disconnected.
+1750113018: Client connector disconnected.
+1750113024: New connection from 172.23.0.1:56464 on port 1883.
+1750113024: New client connected from 172.23.0.1:56464 as connector (p2, c1, k30, u'exampleuser').
+1750113027: New connection from 172.23.0.1:56474 on port 1883.
+1750113027: New client connected from 172.23.0.1:56474 as test (p2, c1, k60).
+1750113027: Client test disconnected.
+1750113032: Client connector disconnected.
+1750113036: New connection from 172.23.0.1:61922 on port 1883.
+1750113036: New client connected from 172.23.0.1:61922 as connector (p2, c1, k30, u'exampleuser').
+1750113188: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750113457: New connection from 172.23.0.1:60626 on port 1883.
+1750113457: Client connector already connected, closing old connection.
+1750113457: New client connected from 172.23.0.1:60626 as connector (p2, c1, k30, u'exampleuser').
+1750113457: New connection from 172.23.0.1:60638 on port 1883.
+1750113457: Client connector already connected, closing old connection.
+1750113457: New client connected from 172.23.0.1:60638 as connector (p2, c1, k30, u'exampleuser').
+1750113457: New connection from 172.23.0.1:60642 on port 1883.
+1750113457: New connection from 172.23.0.1:60648 on port 1883.
+1750113457: Client connector already connected, closing old connection.
+1750113457: New client connected from 172.23.0.1:60642 as connector (p2, c1, k30, u'exampleuser').
+1750113457: Client connector already connected, closing old connection.
+1750113457: New client connected from 172.23.0.1:60648 as connector (p2, c1, k30, u'exampleuser').
+1750113457: New connection from 172.23.0.1:60654 on port 1883.
+1750113457: Client connector already connected, closing old connection.
+1750113457: New client connected from 172.23.0.1:60654 as connector (p2, c1, k30, u'exampleuser').
+1750113457: New connection from 172.23.0.1:60670 on port 1883.
+1750113457: Client connector already connected, closing old connection.
+1750113457: New client connected from 172.23.0.1:60670 as connector (p2, c1, k30, u'exampleuser').
+1750113457: New connection from 172.23.0.1:60686 on port 1883.
+1750113457: New connection from 172.23.0.1:60694 on port 1883.
+1750113457: Client connector already connected, closing old connection.
+1750113457: New client connected from 172.23.0.1:60694 as connector (p2, c1, k30, u'exampleuser').
+1750113457: Client connector already connected, closing old connection.
+1750113457: New client connected from 172.23.0.1:60686 as connector (p2, c1, k30, u'exampleuser').
+1750113457: New connection from 172.23.0.1:60700 on port 1883.
+1750113457: Client connector already connected, closing old connection.
+1750113457: New client connected from 172.23.0.1:60700 as connector (p2, c1, k30, u'exampleuser').
+1750113457: New connection from 172.23.0.1:60710 on port 1883.
+1750113457: Client connector already connected, closing old connection.
+1750113457: New client connected from 172.23.0.1:60710 as connector (p2, c1, k30, u'exampleuser').
+1750113457: New connection from 172.23.0.1:60718 on port 1883.
+1750113457: New connection from 172.23.0.1:60724 on port 1883.
+1750113457: Client connector already connected, closing old connection.
+1750113457: New client connected from 172.23.0.1:60718 as connector (p2, c1, k30, u'exampleuser').
+1750113457: Client connector already connected, closing old connection.
+1750113457: New client connected from 172.23.0.1:60724 as connector (p2, c1, k30, u'exampleuser').
+1750113457: Client connector closed its connection.
+1750113458: New connection from 172.23.0.1:57600 on port 1883.
+1750113458: New client connected from 172.23.0.1:57600 as connector (p2, c1, k30, u'exampleuser').
+1750113554: New connection from 172.23.0.1:64842 on port 1883.
+1750113554: Client connector already connected, closing old connection.
+1750113554: New client connected from 172.23.0.1:64842 as connector (p2, c1, k30, u'exampleuser').
+1750113554: New connection from 172.23.0.1:64858 on port 1883.
+1750113554: Client connector already connected, closing old connection.
+1750113554: New client connected from 172.23.0.1:64858 as connector (p2, c1, k30, u'exampleuser').
+1750113554: New connection from 172.23.0.1:64870 on port 1883.
+1750113554: Client connector already connected, closing old connection.
+1750113554: New client connected from 172.23.0.1:64870 as connector (p2, c1, k30, u'exampleuser').
+1750113554: Client connector disconnected.
+1750113554: New connection from 172.23.0.1:64874 on port 1883.
+1750113554: New client connected from 172.23.0.1:64874 as connector (p2, c1, k30, u'exampleuser').
+1750113554: Client connector disconnected.
+1750113554: New connection from 172.23.0.1:64876 on port 1883.
+1750113554: New client connected from 172.23.0.1:64876 as connector (p2, c1, k30, u'exampleuser').
+1750113554: Client connector disconnected.
+1750113554: New connection from 172.23.0.1:64886 on port 1883.
+1750113554: New client connected from 172.23.0.1:64886 as connector (p2, c1, k30, u'exampleuser').
+1750113554: Client connector disconnected.
+1750113554: New connection from 172.23.0.1:64896 on port 1883.
+1750113554: New client connected from 172.23.0.1:64896 as connector (p2, c1, k30, u'exampleuser').
+1750113554: Client connector disconnected.
+1750113554: New connection from 172.23.0.1:64902 on port 1883.
+1750113554: New client connected from 172.23.0.1:64902 as connector (p2, c1, k30, u'exampleuser').
+1750113554: Client connector disconnected.
+1750113555: New connection from 172.23.0.1:64908 on port 1883.
+1750113555: New client connected from 172.23.0.1:64908 as connector (p2, c1, k30, u'exampleuser').
+1750113597: New connection from 172.23.0.1:57786 on port 1883.
+1750113597: Client connector already connected, closing old connection.
+1750113597: New client connected from 172.23.0.1:57786 as connector (p2, c1, k30, u'exampleuser').
+1750113597: New connection from 172.23.0.1:57788 on port 1883.
+1750113597: Client connector already connected, closing old connection.
+1750113597: New client connected from 172.23.0.1:57788 as connector (p2, c1, k30, u'exampleuser').
+1750113597: New connection from 172.23.0.1:57800 on port 1883.
+1750113597: Client connector already connected, closing old connection.
+1750113597: New client connected from 172.23.0.1:57800 as connector (p2, c1, k30, u'exampleuser').
+1750113597: Client connector disconnected.
+1750113597: New connection from 172.23.0.1:57816 on port 1883.
+1750113597: New client connected from 172.23.0.1:57816 as connector (p2, c1, k30, u'exampleuser').
+1750113597: Client connector disconnected.
+1750113597: New connection from 172.23.0.1:57828 on port 1883.
+1750113597: New client connected from 172.23.0.1:57828 as connector (p2, c1, k30, u'exampleuser').
+1750113597: Client connector disconnected.
+1750113597: New connection from 172.23.0.1:57830 on port 1883.
+1750113597: New client connected from 172.23.0.1:57830 as connector (p2, c1, k30, u'exampleuser').
+1750113597: Client connector disconnected.
+1750113597: New connection from 172.23.0.1:57842 on port 1883.
+1750113597: New client connected from 172.23.0.1:57842 as connector (p2, c1, k30, u'exampleuser').
+1750113597: Client connector disconnected.
+1750113597: New connection from 172.23.0.1:57846 on port 1883.
+1750113597: New client connected from 172.23.0.1:57846 as connector (p2, c1, k30, u'exampleuser').
+1750113597: Client connector disconnected.
+1750113598: New connection from 172.23.0.1:56394 on port 1883.
+1750113598: New client connected from 172.23.0.1:56394 as connector (p2, c1, k30, u'exampleuser').
+1750113659: New connection from 172.23.0.1:61914 on port 1883.
+1750113659: Client connector already connected, closing old connection.
+1750113659: New client connected from 172.23.0.1:61914 as connector (p2, c1, k30, u'exampleuser').
+1750113659: New connection from 172.23.0.1:61922 on port 1883.
+1750113659: Client connector already connected, closing old connection.
+1750113659: New client connected from 172.23.0.1:61922 as connector (p2, c1, k30, u'exampleuser').
+1750113659: New connection from 172.23.0.1:61930 on port 1883.
+1750113659: Client connector already connected, closing old connection.
+1750113659: New client connected from 172.23.0.1:61930 as connector (p2, c1, k30, u'exampleuser').
+1750113659: Client connector disconnected.
+1750113659: New connection from 172.23.0.1:61944 on port 1883.
+1750113659: New client connected from 172.23.0.1:61944 as connector (p2, c1, k30, u'exampleuser').
+1750113659: Client connector disconnected.
+1750113659: New connection from 172.23.0.1:61956 on port 1883.
+1750113659: New client connected from 172.23.0.1:61956 as connector (p2, c1, k30, u'exampleuser').
+1750113659: Client connector disconnected.
+1750113659: New connection from 172.23.0.1:61962 on port 1883.
+1750113659: New client connected from 172.23.0.1:61962 as connector (p2, c1, k30, u'exampleuser').
+1750113659: Client connector disconnected.
+1750113659: New connection from 172.23.0.1:61970 on port 1883.
+1750113659: New client connected from 172.23.0.1:61970 as connector (p2, c1, k30, u'exampleuser').
+1750113659: Client connector disconnected.
+1750113659: New connection from 172.23.0.1:61974 on port 1883.
+1750113659: New client connected from 172.23.0.1:61974 as connector (p2, c1, k30, u'exampleuser').
+1750113659: Client connector disconnected.
+1750113660: New connection from 172.23.0.1:61978 on port 1883.
+1750113660: New client connected from 172.23.0.1:61978 as connector (p2, c1, k30, u'exampleuser').
+1750113678: New connection from 172.23.0.1:55112 on port 1883.
+1750113678: Client connector already connected, closing old connection.
+1750113678: New client connected from 172.23.0.1:55112 as connector (p2, c1, k30, u'exampleuser').
+1750113678: New connection from 172.23.0.1:55120 on port 1883.
+1750113678: Client connector already connected, closing old connection.
+1750113678: New client connected from 172.23.0.1:55120 as connector (p2, c1, k30, u'exampleuser').
+1750113678: New connection from 172.23.0.1:55134 on port 1883.
+1750113678: Client connector already connected, closing old connection.
+1750113678: New client connected from 172.23.0.1:55134 as connector (p2, c1, k30, u'exampleuser').
+1750113678: Client connector disconnected due to out of memory.
+1750113678: New connection from 172.23.0.1:55138 on port 1883.
+1750113678: New client connected from 172.23.0.1:55138 as connector (p2, c1, k30, u'exampleuser').
+1750113678: Client connector disconnected.
+1750113678: New connection from 172.23.0.1:55152 on port 1883.
+1750113678: New client connected from 172.23.0.1:55152 as connector (p2, c1, k30, u'exampleuser').
+1750113678: Client connector disconnected.
+1750113678: New connection from 172.23.0.1:55156 on port 1883.
+1750113678: New client connected from 172.23.0.1:55156 as connector (p2, c1, k30, u'exampleuser').
+1750113679: Client connector disconnected.
+1750113679: New connection from 172.23.0.1:55166 on port 1883.
+1750113679: New client connected from 172.23.0.1:55166 as connector (p2, c1, k30, u'exampleuser').
+1750113679: Client connector disconnected.
+1750113679: New connection from 172.23.0.1:55180 on port 1883.
+1750113679: New client connected from 172.23.0.1:55180 as connector (p2, c1, k30, u'exampleuser').
+1750113679: Client connector disconnected.
+1750113679: New connection from 172.23.0.1:55196 on port 1883.
+1750113679: New client connected from 172.23.0.1:55196 as connector (p2, c1, k30, u'exampleuser').
+1750113679: Client connector disconnected.
+1750113679: New connection from 172.23.0.1:55208 on port 1883.
+1750113679: New client connected from 172.23.0.1:55208 as connector (p2, c1, k30, u'exampleuser').
+1750113679: Client connector disconnected.
+1750113679: New connection from 172.23.0.1:55214 on port 1883.
+1750113679: New client connected from 172.23.0.1:55214 as connector (p2, c1, k30, u'exampleuser').
+1750113679: New connection from 172.23.0.1:55216 on port 1883.
+1750113679: Client connector already connected, closing old connection.
+1750113679: New client connected from 172.23.0.1:55216 as connector (p2, c1, k30, u'exampleuser').
+1750113766: New connection from 172.23.0.1:63326 on port 1883.
+1750113766: Client connector already connected, closing old connection.
+1750113766: New client connected from 172.23.0.1:63326 as connector (p2, c1, k30, u'exampleuser').
+1750113766: New connection from 172.23.0.1:63336 on port 1883.
+1750113766: Client connector already connected, closing old connection.
+1750113766: New client connected from 172.23.0.1:63336 as connector (p2, c1, k30, u'exampleuser').
+1750113766: New connection from 172.23.0.1:63348 on port 1883.
+1750113766: Client connector already connected, closing old connection.
+1750113766: New client connected from 172.23.0.1:63348 as connector (p2, c1, k30, u'exampleuser').
+1750113766: Client connector disconnected.
+1750113766: New connection from 172.23.0.1:63360 on port 1883.
+1750113766: New client connected from 172.23.0.1:63360 as connector (p2, c1, k30, u'exampleuser').
+1750113766: Client connector disconnected.
+1750113767: New connection from 172.23.0.1:63366 on port 1883.
+1750113767: New client connected from 172.23.0.1:63366 as connector (p2, c1, k30, u'exampleuser').
+1750113767: Client connector disconnected due to out of memory.
+1750113767: New connection from 172.23.0.1:63376 on port 1883.
+1750113767: New client connected from 172.23.0.1:63376 as connector (p2, c1, k30, u'exampleuser').
+1750113767: Client connector disconnected.
+1750113767: New connection from 172.23.0.1:63392 on port 1883.
+1750113767: New client connected from 172.23.0.1:63392 as connector (p2, c1, k30, u'exampleuser').
+1750113767: Client connector disconnected.
+1750113767: New connection from 172.23.0.1:63404 on port 1883.
+1750113767: New client connected from 172.23.0.1:63404 as connector (p2, c1, k30, u'exampleuser').
+1750113767: Client connector disconnected.
+1750113767: New connection from 172.23.0.1:63406 on port 1883.
+1750113767: New client connected from 172.23.0.1:63406 as connector (p2, c1, k30, u'exampleuser').
+1750113767: Client connector disconnected.
+1750113767: New connection from 172.23.0.1:63412 on port 1883.
+1750113767: New client connected from 172.23.0.1:63412 as connector (p2, c1, k30, u'exampleuser').
+1750113767: Client connector disconnected.
+1750113767: New connection from 172.23.0.1:63416 on port 1883.
+1750113767: New client connected from 172.23.0.1:63416 as connector (p2, c1, k30, u'exampleuser').
+1750113822: Client connector disconnected.
+1750113826: New connection from 172.23.0.1:62174 on port 1883.
+1750113826: New client connected from 172.23.0.1:62174 as connector (p2, c1, k30, u'exampleuser').
+1750113864: Client connector disconnected.
+1750113865: New connection from 172.23.0.1:62258 on port 1883.
+1750113865: New client connected from 172.23.0.1:62258 as connector (p2, c1, k30, u'exampleuser').
+1750113865: Outgoing messages are being dropped for client connector.
+1750113947: Client connector disconnected.
+1750113950: New connection from 172.23.0.1:62992 on port 1883.
+1750113950: New client connected from 172.23.0.1:62992 as connector (p2, c1, k30, u'exampleuser').
+1750113950: Outgoing messages are being dropped for client connector.
+1750113951: Client connector disconnected.
+1750114056: New connection from 172.23.0.1:64842 on port 1883.
+1750114056: New client connected from 172.23.0.1:64842 as connector (p2, c1, k30, u'exampleuser').
+1750114056: Outgoing messages are being dropped for client connector.
+1750114058: Client connector disconnected.
+1750114082: New connection from 172.23.0.1:61722 on port 1883.
+1750114082: New client connected from 172.23.0.1:61722 as connector (p2, c1, k30, u'exampleuser').
+1750114082: Outgoing messages are being dropped for client connector.
+1750114086: Client connector disconnected.
+1750114094: New connection from 172.23.0.1:58262 on port 1883.
+1750114094: New client connected from 172.23.0.1:58262 as connector (p2, c1, k30, u'exampleuser').
+1750114094: Outgoing messages are being dropped for client connector.
+1750114098: Client connector disconnected.
+1750114153: New connection from 172.23.0.1:56094 on port 1883.
+1750114153: New client connected from 172.23.0.1:56094 as connector (p2, c1, k30, u'exampleuser').
+1750114153: Client connector disconnected.
+1750114153: New connection from 172.23.0.1:56096 on port 1883.
+1750114153: New client connected from 172.23.0.1:56096 as connector (p2, c1, k30, u'exampleuser').
+1750114153: Client connector disconnected.
+1750114153: New connection from 172.23.0.1:56104 on port 1883.
+1750114153: New client connected from 172.23.0.1:56104 as connector (p2, c1, k30, u'exampleuser').
+1750114153: Client connector disconnected.
+1750114153: New connection from 172.23.0.1:56118 on port 1883.
+1750114153: New client connected from 172.23.0.1:56118 as connector (p2, c1, k30, u'exampleuser').
+1750114153: Client connector disconnected due to out of memory.
+1750114153: New connection from 172.23.0.1:56132 on port 1883.
+1750114153: New client connected from 172.23.0.1:56132 as connector (p2, c1, k30, u'exampleuser').
+1750114153: Client connector disconnected.
+1750114153: New connection from 172.23.0.1:56140 on port 1883.
+1750114153: New client connected from 172.23.0.1:56140 as connector (p2, c1, k30, u'exampleuser').
+1750114154: Client connector disconnected.
+1750114154: New connection from 172.23.0.1:56152 on port 1883.
+1750114154: New client connected from 172.23.0.1:56152 as connector (p2, c1, k30, u'exampleuser').
+1750114154: Client connector disconnected.
+1750114154: New connection from 172.23.0.1:56164 on port 1883.
+1750114154: New client connected from 172.23.0.1:56164 as connector (p2, c1, k30, u'exampleuser').
+1750114154: Client connector disconnected.
+1750114184: New connection from 172.23.0.1:65424 on port 1883.
+1750114184: New client connected from 172.23.0.1:65424 as connector (p2, c1, k30, u'exampleuser').
+1750114184: Client connector disconnected.
+1750114184: New connection from 172.23.0.1:65428 on port 1883.
+1750114184: New client connected from 172.23.0.1:65428 as connector (p2, c1, k30, u'exampleuser').
+1750114184: Client connector disconnected.
+1750114184: New connection from 172.23.0.1:65442 on port 1883.
+1750114184: New client connected from 172.23.0.1:65442 as connector (p2, c1, k30, u'exampleuser').
+1750114184: Client connector disconnected.
+1750114184: New connection from 172.23.0.1:65444 on port 1883.
+1750114184: New client connected from 172.23.0.1:65444 as connector (p2, c1, k30, u'exampleuser').
+1750114184: Client connector disconnected.
+1750114184: New connection from 172.23.0.1:65448 on port 1883.
+1750114184: New client connected from 172.23.0.1:65448 as connector (p2, c1, k30, u'exampleuser').
+1750114184: Client connector disconnected.
+1750114184: New connection from 172.23.0.1:65464 on port 1883.
+1750114184: New client connected from 172.23.0.1:65464 as connector (p2, c1, k30, u'exampleuser').
+1750114184: Client connector disconnected.
+1750114184: New connection from 172.23.0.1:65478 on port 1883.
+1750114184: New client connected from 172.23.0.1:65478 as connector (p2, c1, k30, u'exampleuser').
+1750114184: Client connector disconnected.
+1750114184: New connection from 172.23.0.1:65480 on port 1883.
+1750114184: New client connected from 172.23.0.1:65480 as connector (p2, c1, k30, u'exampleuser').
+1750114184: Client connector disconnected.
+1750114208: New connection from 172.23.0.1:63354 on port 1883.
+1750114208: New client connected from 172.23.0.1:63354 as connector (p2, c1, k30, u'exampleuser').
+1750114208: Client connector disconnected.
+1750114208: New connection from 172.23.0.1:63364 on port 1883.
+1750114208: New client connected from 172.23.0.1:63364 as connector (p2, c1, k30, u'exampleuser').
+1750114208: Client connector disconnected.
+1750114208: New connection from 172.23.0.1:61246 on port 1883.
+1750114208: New client connected from 172.23.0.1:61246 as connector (p2, c1, k30, u'exampleuser').
+1750114208: Client connector disconnected.
+1750114208: New connection from 172.23.0.1:61260 on port 1883.
+1750114208: New client connected from 172.23.0.1:61260 as connector (p2, c1, k30, u'exampleuser').
+1750114208: Client connector disconnected.
+1750114208: New connection from 172.23.0.1:61264 on port 1883.
+1750114208: New client connected from 172.23.0.1:61264 as connector (p2, c1, k30, u'exampleuser').
+1750114208: Client connector disconnected.
+1750114208: New connection from 172.23.0.1:61274 on port 1883.
+1750114208: New client connected from 172.23.0.1:61274 as connector (p2, c1, k30, u'exampleuser').
+1750114208: Client connector disconnected.
+1750114208: New connection from 172.23.0.1:61282 on port 1883.
+1750114208: New client connected from 172.23.0.1:61282 as connector (p2, c1, k30, u'exampleuser').
+1750114209: Client connector disconnected.
+1750114209: New connection from 172.23.0.1:61294 on port 1883.
+1750114209: New client connected from 172.23.0.1:61294 as connector (p2, c1, k30, u'exampleuser').
+1750114209: Client connector disconnected: Broken pipe.
+1750114340: New connection from 172.23.0.1:57714 on port 1883.
+1750114340: New client connected from 172.23.0.1:57714 as connector (p2, c1, k30, u'exampleuser').
+1750114341: Client connector disconnected.
+1750114341: New connection from 172.23.0.1:57722 on port 1883.
+1750114341: New client connected from 172.23.0.1:57722 as connector (p2, c1, k30, u'exampleuser').
+1750114341: Client connector disconnected.
+1750114341: New connection from 172.23.0.1:57736 on port 1883.
+1750114341: New client connected from 172.23.0.1:57736 as connector (p2, c1, k30, u'exampleuser').
+1750114341: Client connector disconnected: Broken pipe.
+1750114341: New connection from 172.23.0.1:57744 on port 1883.
+1750114341: New client connected from 172.23.0.1:57744 as connector (p2, c1, k30, u'exampleuser').
+1750114342: Client connector disconnected.
+1750114342: New connection from 172.23.0.1:57746 on port 1883.
+1750114342: New client connected from 172.23.0.1:57746 as connector (p2, c1, k30, u'exampleuser').
+1750114342: Client connector disconnected: Broken pipe.
+1750114342: New connection from 172.23.0.1:57754 on port 1883.
+1750114342: New client connected from 172.23.0.1:57754 as connector (p2, c1, k30, u'exampleuser').
+1750114342: Client connector disconnected: Broken pipe.
+1750114342: New connection from 172.23.0.1:57762 on port 1883.
+1750114342: New client connected from 172.23.0.1:57762 as connector (p2, c1, k30, u'exampleuser').
+1750114343: Client connector disconnected: Broken pipe.
+1750114343: New connection from 172.23.0.1:57776 on port 1883.
+1750114343: New client connected from 172.23.0.1:57776 as connector (p2, c1, k30, u'exampleuser').
+1750114343: Client connector disconnected.
+1750114343: New connection from 172.23.0.1:57784 on port 1883.
+1750114343: New client connected from 172.23.0.1:57784 as connector (p2, c1, k30, u'exampleuser').
+1750114343: Client connector disconnected.
+1750114344: New connection from 172.23.0.1:57786 on port 1883.
+1750114344: New client connected from 172.23.0.1:57786 as connector (p2, c1, k30, u'exampleuser').
+1750114344: Client connector disconnected: Broken pipe.
+1750114344: New connection from 172.23.0.1:57796 on port 1883.
+1750114344: New client connected from 172.23.0.1:57796 as connector (p2, c1, k30, u'exampleuser').
+1750114344: Client connector disconnected.
+1750114345: New connection from 172.23.0.1:57808 on port 1883.
+1750114345: New client connected from 172.23.0.1:57808 as connector (p2, c1, k30, u'exampleuser').
+1750114345: Client connector disconnected: Broken pipe.
+1750114353: New connection from 172.23.0.1:62634 on port 1883.
+1750114353: New client connected from 172.23.0.1:62634 as connector (p2, c1, k30, u'exampleuser').
+1750114353: Client connector disconnected: Broken pipe.
+1750114353: New connection from 172.23.0.1:62636 on port 1883.
+1750114353: New client connected from 172.23.0.1:62636 as connector (p2, c1, k30, u'exampleuser').
+1750114353: Client connector disconnected.
+1750114353: New connection from 172.23.0.1:62638 on port 1883.
+1750114353: New client connected from 172.23.0.1:62638 as connector (p2, c1, k30, u'exampleuser').
+1750114353: Client connector disconnected.
+1750114353: New connection from 172.23.0.1:62652 on port 1883.
+1750114353: New client connected from 172.23.0.1:62652 as connector (p2, c1, k30, u'exampleuser').
+1750114353: Client connector disconnected.
+1750114353: New connection from 172.23.0.1:62656 on port 1883.
+1750114353: New client connected from 172.23.0.1:62656 as connector (p2, c1, k30, u'exampleuser').
+1750114353: Client connector disconnected.
+1750114353: New connection from 172.23.0.1:62672 on port 1883.
+1750114353: New client connected from 172.23.0.1:62672 as connector (p2, c1, k30, u'exampleuser').
+1750114353: Client connector closed its connection.
+1750114354: New connection from 172.23.0.1:62678 on port 1883.
+1750114354: New client connected from 172.23.0.1:62678 as connector (p2, c1, k30, u'exampleuser').
+1750114354: Client connector disconnected.
+1750114354: New connection from 172.23.0.1:62690 on port 1883.
+1750114354: New client connected from 172.23.0.1:62690 as connector (p2, c1, k30, u'exampleuser').
+1750114354: Client connector disconnected.
+1750114392: New connection from 172.23.0.1:57056 on port 1883.
+1750114392: New client connected from 172.23.0.1:57056 as connector (p2, c1, k30, u'exampleuser').
+1750114393: Client connector disconnected.
+1750114393: New connection from 172.23.0.1:57062 on port 1883.
+1750114393: New client connected from 172.23.0.1:57062 as connector (p2, c1, k30, u'exampleuser').
+1750114393: Client connector disconnected.
+1750114393: New connection from 172.23.0.1:57064 on port 1883.
+1750114393: New client connected from 172.23.0.1:57064 as connector (p2, c1, k30, u'exampleuser').
+1750114393: New connection from 172.23.0.1:57080 on port 1883.
+1750114393: Client connector disconnected.
+1750114393: New client connected from 172.23.0.1:57080 as connector (p2, c1, k30, u'exampleuser').
+1750114393: Client connector disconnected: Broken pipe.
+1750114393: New connection from 172.23.0.1:57082 on port 1883.
+1750114393: New client connected from 172.23.0.1:57082 as connector (p2, c1, k30, u'exampleuser').
+1750114393: Client connector disconnected.
+1750114393: New connection from 172.23.0.1:57088 on port 1883.
+1750114393: New client connected from 172.23.0.1:57088 as connector (p2, c1, k30, u'exampleuser').
+1750114393: Client connector disconnected: Broken pipe.
+1750114393: New connection from 172.23.0.1:57092 on port 1883.
+1750114393: New client connected from 172.23.0.1:57092 as connector (p2, c1, k30, u'exampleuser').
+1750114393: Client connector disconnected: Broken pipe.
+1750114393: New connection from 172.23.0.1:57104 on port 1883.
+1750114393: New client connected from 172.23.0.1:57104 as connector (p2, c1, k30, u'exampleuser').
+1750114393: Client connector disconnected: Broken pipe.
+1750114398: New connection from 172.23.0.1:64120 on port 1883.
+1750114398: New client connected from 172.23.0.1:64120 as connector (p2, c1, k30, u'exampleuser').
+1750114398: Client connector disconnected.
+1750114398: New connection from 172.23.0.1:64126 on port 1883.
+1750114398: New client connected from 172.23.0.1:64126 as connector (p2, c1, k30, u'exampleuser').
+1750114398: Client connector disconnected: Broken pipe.
+1750114398: New connection from 172.23.0.1:64132 on port 1883.
+1750114398: New client connected from 172.23.0.1:64132 as connector (p2, c1, k30, u'exampleuser').
+1750114398: Client connector disconnected.
+1750114398: New connection from 172.23.0.1:64148 on port 1883.
+1750114398: New client connected from 172.23.0.1:64148 as connector (p2, c1, k30, u'exampleuser').
+1750114398: Client connector disconnected.
+1750114398: New connection from 172.23.0.1:64160 on port 1883.
+1750114398: New client connected from 172.23.0.1:64160 as connector (p2, c1, k30, u'exampleuser').
+1750114398: Client connector disconnected.
+1750114399: New connection from 172.23.0.1:64174 on port 1883.
+1750114399: New client connected from 172.23.0.1:64174 as connector (p2, c1, k30, u'exampleuser').
+1750114399: Client connector disconnected.
+1750114399: New connection from 172.23.0.1:64182 on port 1883.
+1750114399: New client connected from 172.23.0.1:64182 as connector (p2, c1, k30, u'exampleuser').
+1750114399: Client connector disconnected.
+1750114399: New connection from 172.23.0.1:64192 on port 1883.
+1750114399: New client connected from 172.23.0.1:64192 as connector (p2, c1, k30, u'exampleuser').
+1750114399: Client connector disconnected.
+1750114410: New connection from 172.23.0.1:57640 on port 1883.
+1750114410: New client connected from 172.23.0.1:57640 as connector (p2, c1, k30, u'exampleuser').
+1750114411: Client connector disconnected: Broken pipe.
+1750114411: New connection from 172.23.0.1:57644 on port 1883.
+1750114411: New client connected from 172.23.0.1:57644 as connector (p2, c1, k30, u'exampleuser').
+1750114411: New connection from 172.23.0.1:57656 on port 1883.
+1750114411: Client connector already connected, closing old connection.
+1750114411: New client connected from 172.23.0.1:57656 as connector (p2, c1, k30, u'exampleuser').
+1750114412: Client connector disconnected: Broken pipe.
+1750114412: New connection from 172.23.0.1:57668 on port 1883.
+1750114412: New client connected from 172.23.0.1:57668 as connector (p2, c1, k30, u'exampleuser').
+1750114413: New connection from 172.23.0.1:57682 on port 1883.
+1750114413: Client connector already connected, closing old connection.
+1750114413: New client connected from 172.23.0.1:57682 as connector (p2, c1, k30, u'exampleuser').
+1750114414: New connection from 172.23.0.1:57698 on port 1883.
+1750114414: Client connector disconnected: Broken pipe.
+1750114414: New client connected from 172.23.0.1:57698 as connector (p2, c1, k30, u'exampleuser').
+1750114414: New connection from 172.23.0.1:57706 on port 1883.
+1750114414: Client connector already connected, closing old connection.
+1750114414: New client connected from 172.23.0.1:57706 as connector (p2, c1, k30, u'exampleuser').
+1750114415: New connection from 172.23.0.1:57716 on port 1883.
+1750114415: Client connector already connected, closing old connection.
+1750114415: New client connected from 172.23.0.1:57716 as connector (p2, c1, k30, u'exampleuser').
+1750114418: New connection from 172.23.0.1:57724 on port 1883.
+1750114418: Client connector already connected, closing old connection.
+1750114418: New client connected from 172.23.0.1:57724 as connector (p2, c1, k30, u'exampleuser').
+1750114421: New connection from 172.23.0.1:64920 on port 1883.
+1750114422: Client connector already connected, closing old connection.
+1750114422: New client connected from 172.23.0.1:64920 as connector (p2, c1, k30, u'exampleuser').
+1750114427: Client connector closed its connection.
+1750114461: New connection from 172.23.0.1:63086 on port 1883.
+1750114461: New client connected from 172.23.0.1:63086 as connector (p2, c1, k30, u'exampleuser').
+1750114461: Client connector disconnected.
+1750114461: New connection from 172.23.0.1:63098 on port 1883.
+1750114461: New client connected from 172.23.0.1:63098 as connector (p2, c1, k30, u'exampleuser').
+1750114461: Client connector disconnected.
+1750114461: New connection from 172.23.0.1:63114 on port 1883.
+1750114461: New client connected from 172.23.0.1:63114 as connector (p2, c1, k30, u'exampleuser').
+1750114461: Client connector disconnected.
+1750114461: New connection from 172.23.0.1:63120 on port 1883.
+1750114461: New client connected from 172.23.0.1:63120 as connector (p2, c1, k30, u'exampleuser').
+1750114462: Client connector disconnected: Broken pipe.
+1750114462: New connection from 172.23.0.1:63136 on port 1883.
+1750114462: New client connected from 172.23.0.1:63136 as connector (p2, c1, k30, u'exampleuser').
+1750114462: Client connector disconnected.
+1750114462: New connection from 172.23.0.1:63150 on port 1883.
+1750114462: New client connected from 172.23.0.1:63150 as connector (p2, c1, k30, u'exampleuser').
+1750114462: Client connector disconnected.
+1750114462: New connection from 172.23.0.1:63164 on port 1883.
+1750114462: New client connected from 172.23.0.1:63164 as connector (p2, c1, k30, u'exampleuser').
+1750114462: Client connector disconnected.
+1750114462: New connection from 172.23.0.1:63180 on port 1883.
+1750114462: New client connected from 172.23.0.1:63180 as connector (p2, c1, k30, u'exampleuser').
+1750114462: Client connector disconnected.
+1750114518: New connection from 172.23.0.1:62152 on port 1883.
+1750114518: New client connected from 172.23.0.1:62152 as connector (p2, c1, k30, u'exampleuser').
+1750114532: Client connector disconnected.
+1750114538: New connection from 172.23.0.1:64876 on port 1883.
+1750114538: New client connected from 172.23.0.1:64876 as connector (p2, c1, k30, u'exampleuser').
+1750114572: Client connector disconnected.
+1750114619: New connection from 172.23.0.1:59020 on port 1883.
+1750114619: New client connected from 172.23.0.1:59020 as connector (p2, c1, k30, u'exampleuser').
+1750114667: Client connector disconnected.
+1750114690: New connection from 172.23.0.1:60050 on port 1883.
+1750114690: New client connected from 172.23.0.1:60050 as connector (p2, c1, k30, u'exampleuser').
+1750114690: Outgoing messages are being dropped for client connector.
+1750114707: Client connector disconnected.
+1750114711: New connection from 172.23.0.1:65304 on port 1883.
+1750114711: New client connected from 172.23.0.1:65304 as connector (p2, c1, k30, u'exampleuser').
+1750114711: Outgoing messages are being dropped for client connector.
+1750114731: Client connector disconnected.
+1750114734: New connection from 172.23.0.1:64318 on port 1883.
+1750114734: New client connected from 172.23.0.1:64318 as connector (p2, c1, k30, u'exampleuser').
+1750114734: Outgoing messages are being dropped for client connector.
+1750114748: Client connector disconnected.
+1750114751: New connection from 172.23.0.1:56040 on port 1883.
+1750114751: New client connected from 172.23.0.1:56040 as connector (p2, c1, k30, u'exampleuser').
+1750114820: Client connector disconnected.
+1750114989: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750115406: mosquitto version 2.0.21 terminating
+1750115406: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750150187: mosquitto version 2.0.21 starting
+1750150187: Config loaded from /mosquitto/config/mosquitto.conf.
+1750150187: Opening ipv4 listen socket on port 1883.
+1750150187: Opening ipv6 listen socket on port 1883.
+1750150187: mosquitto version 2.0.21 running
+1750150198: New connection from 172.23.0.1:64570 on port 1883.
+1750150198: New client connected from 172.23.0.1:64570 as connector (p2, c1, k30, u'exampleuser').
+1750150220: New connection from 172.23.0.1:57770 on port 1883.
+1750150220: New client connected from 172.23.0.1:57770 as test (p2, c1, k60).
+1750150220: Client test disconnected.
+1750150243: Client connector disconnected.
+1750150248: New connection from 172.23.0.1:62218 on port 1883.
+1750150248: New client connected from 172.23.0.1:62218 as connector (p2, c1, k30, u'exampleuser').
+1750150252: New connection from 172.23.0.1:63686 on port 1883.
+1750150252: Client connector already connected, closing old connection.
+1750150252: New client connected from 172.23.0.1:63686 as connector (p2, c1, k30, u'exampleuser').
+1750150252: New connection from 172.23.0.1:63690 on port 1883.
+1750150252: Client connector already connected, closing old connection.
+1750150252: New client connected from 172.23.0.1:63690 as connector (p2, c1, k30, u'exampleuser').
+1750150252: New connection from 172.23.0.1:63692 on port 1883.
+1750150252: Client connector already connected, closing old connection.
+1750150252: New client connected from 172.23.0.1:63692 as connector (p2, c1, k30, u'exampleuser').
+1750150253: New connection from 172.23.0.1:63706 on port 1883.
+1750150253: Client connector already connected, closing old connection.
+1750150253: New client connected from 172.23.0.1:63706 as connector (p2, c1, k30, u'exampleuser').
+1750150254: New connection from 172.23.0.1:63720 on port 1883.
+1750150254: Client connector already connected, closing old connection.
+1750150254: New client connected from 172.23.0.1:63720 as connector (p2, c1, k30, u'exampleuser').
+1750150256: New connection from 172.23.0.1:63724 on port 1883.
+1750150256: Client connector already connected, closing old connection.
+1750150256: New client connected from 172.23.0.1:63724 as connector (p2, c1, k30, u'exampleuser').
+1750150258: New connection from 172.23.0.1:63732 on port 1883.
+1750150258: Client connector already connected, closing old connection.
+1750150258: New client connected from 172.23.0.1:63732 as connector (p2, c1, k30, u'exampleuser').
+1750150259: Client connector disconnected.
+1750150262: New connection from 172.23.0.1:61112 on port 1883.
+1750150262: New client connected from 172.23.0.1:61112 as connector (p2, c1, k30, u'exampleuser').
+1750150262: New connection from 172.23.0.1:61124 on port 1883.
+1750150262: New client connected from 172.23.0.1:61124 as test (p2, c1, k60).
+1750150262: Client test disconnected.
+1750151461: Client connector disconnected.
+1750151464: New connection from 172.23.0.1:57358 on port 1883.
+1750151464: New client connected from 172.23.0.1:57358 as connector (p2, c1, k30, u'exampleuser').
+1750151466: New connection from 172.23.0.1:57370 on port 1883.
+1750151466: New client connected from 172.23.0.1:57370 as test (p2, c1, k60).
+1750151466: Client test disconnected.
+1750151468: New connection from 172.23.0.1:57378 on port 1883.
+1750151468: New client connected from 172.23.0.1:57378 as test (p2, c1, k60).
+1750151468: Client test disconnected.
+1750151472: Client connector disconnected.
+1750151974: New connection from 172.23.0.1:60720 on port 1883.
+1750151974: New client connected from 172.23.0.1:60720 as test (p2, c1, k60).
+1750151974: Client test disconnected.
+1750151977: New connection from 172.23.0.1:60722 on port 1883.
+1750151977: New client connected from 172.23.0.1:60722 as connector (p2, c1, k30, u'exampleuser').
+1750151988: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750151998: Client connector disconnected.
+1750152029: New connection from 172.23.0.1:56956 on port 1883.
+1750152029: New client connected from 172.23.0.1:56956 as connector (p2, c1, k30, u'exampleuser').
+1750152029: Client connector closed its connection.
+1750152513: New connection from 172.23.0.1:60156 on port 1883.
+1750152513: New client connected from 172.23.0.1:60156 as connector (p2, c1, k30, u'exampleuser').
+1750152513: Client connector closed its connection.
+1750152522: New connection from 172.23.0.1:57964 on port 1883.
+1750152522: New client connected from 172.23.0.1:57964 as connector (p2, c1, k30, u'exampleuser').
+1750153789: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1750155358: Client connector disconnected.
+1750155367: mosquitto version 2.0.21 terminating
+1750155367: Saving in-memory database to /mosquitto/data//mosquitto.db.
