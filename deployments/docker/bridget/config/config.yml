@@ -1,0 +1,16 @@
+---
+mqtt:
+  host: "docker-mqtt-1"
+  port: 1883
+  topics:
+    test-db/home: 2
+    test-db/test: 1
+    test-db/benchmark: 0
+database:
+  type: influx
+  influx:
+    host: "docker-influxdb-1"
+    port: 8181
+    org: test-org
+    database: test-db
+    authScheme: Token

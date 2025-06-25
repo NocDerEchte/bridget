@@ -1,25 +1,32 @@
 volumes:
   influxdb_data:
+  mosquitto_data:
 
 services:
   mqtt:
     image: eclipse-mosquitto
-    restart: unless-stopped
     ports:
       - 1883:1883
     volumes:
+      - mosquitto_data:/mosquitto/data:rw
       - ./mosquitto/config:/mosquitto/config:ro
-      - ./mosquitto/data:/mosquitto/data:rw
-      - ./mosquitto/log:/mosquitto/log:rw
+    restart: unless-stopped
   influxdb:
     image: influxdb:3-core
-    command: serve --node-id=${INFLUXDB_NODE_ID} --object-store=file --data-dir=/var/lib/influxdb3
+    command: serve --node-id=db1 --object-store=file --data-dir=/var/lib/influxdb3
     ports:
       - 8181:8181
     volumes:
       - influxdb_data:/var/lib/influxdb3
-      - ./influxdb/config:/etc/influxdb3
-    environment:
-      - INFLUXDB_TOKEN=${INFLUXDB_TOKEN}
-      - INFLUXDB_ORG=${INFLUXDB_ORG}
+    restart: unless-stopped
+
+  bridget:
+    build: ./../..
+    volumes:
+      - ./bridget/config:/etc/bridget
+    env_file:
+      - .env_example
+    depends_on:
+      - mqtt
+      - influxdb
     restart: unless-stopped
