@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-BROKER='192.168.178.61'
+BROKER="$1"
 PORT='1883'
-CLIENT_ID='test'
-TOPIC='test-db/test'
+CLIENT_ID='test-client'
+TOPIC="$2"
 MESSAGE='{"tags": {"room": "living_room"},"fields": {"temp": "24.2", "hum": 40, "cp": "15i"}}'
 
 
