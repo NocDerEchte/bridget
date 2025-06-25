@@ -6,13 +6,6 @@ import (
 	"github.com/nocderechte/bridget/internal/config"
 )
 
-/*
-TODO:
-  - use different methods based on database (influx, timescale, prometheus, etc.)
-    -> main.go can call db.Init(<database_type>) after that use appropriate functions
-    -> db.TestConnection(), etc.
-*/
-
 var testFuncs = map[string]func() error{
 	"influx": testInfluxDBConnection,
 }

@@ -3,17 +3,17 @@ package db
 import (
 	"context"
 	"fmt"
+	"os"
 	"time"
 
 	"github.com/InfluxCommunity/influxdb3-go/v2/influxdb3"
 	"github.com/influxdata/line-protocol/v2/lineprotocol"
 	"github.com/nocderechte/bridget/internal/config"
 	"github.com/nocderechte/bridget/internal/logging"
-	"github.com/nocderechte/bridget/pkg/helper"
 )
 
 var (
-	token  = helper.GetEnv("INFLUXDB_TOKEN", "apiv3_9xA-23zqAYoF8FXs7tqCXNYauh2aHXhzpkrQxIoO7HmNGo25EBhtmXkiVNP_bKeHI8OsqoEW7V4Wr1g7llvyZQ")
+	token  = os.Getenv("INFLUXDB_TOKEN")
 	client *influxdb3.Client
 )
 

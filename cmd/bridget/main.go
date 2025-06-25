@@ -9,15 +9,16 @@ import (
 	"github.com/nocderechte/bridget/internal/db"
 	"github.com/nocderechte/bridget/internal/logging"
 	"github.com/nocderechte/bridget/internal/mqtt"
+	"github.com/nocderechte/bridget/pkg/helper"
 )
 
 func main() {
 	logging.InitLogger()
 
 	// load config
-	path := "/home/niklas/Repos/github.com/nocderechte/mqtt-db-connector/internal/config/config.yml"
+	configPath := helper.GetEnv("BRIDGET_CONFIG", "/etc/bridget/config.yml")
 
-	config, err := config.LoadConfig(path)
+	config, err := config.LoadConfig(configPath)
 	logging.Info("loading config.")
 	if err != nil {
 		logging.Errorf("Unable to load config.", err)

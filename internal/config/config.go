@@ -2,7 +2,6 @@ package config
 
 import (
 	"errors"
-	"fmt"
 	"os"
 
 	"github.com/nocderechte/bridget/internal/logging"
@@ -12,8 +11,6 @@ import (
 type Config struct {
 	MQTT     mqttConfig     `yaml:"mqtt"`
 	Database DatabaseConfig `yaml:"database"`
-	// Database    *InfluxDBConfig    `yaml:"influx"`
-	// TimescaleDB *TimescaleDBConfig `yaml:"timescale"`
 }
 
 type mqttConfig struct {
@@ -38,28 +35,18 @@ type InfluxDBConfig struct {
 
 type TimescaleDBConfig struct{}
 
-type valueError struct {
-	// field   string
-	message string
-}
-
-func (e *valueError) Error(args ...any) string {
-	return fmt.Sprintf(e.message, args...)
-}
-
 func (c *Config) validate() error {
-	err := valueError{message: "missing/invalid config key %s"}
 	validDatabases := []string{"influx", "timescale"}
 
 	// validate mqtt config
 	if c.MQTT.Host == "" {
-		return errors.New(err.Error("mqtt.host"))
+		return errors.New("missing/invalid config key mqtt.host")
 	}
 	if c.MQTT.Port <= 0 || c.MQTT.Port > 65535 {
-		return errors.New(err.Error("mqtt.port"))
+		return errors.New("missing/invalid config key mqtt.port")
 	}
 	if c.MQTT.Topics == nil {
-		return errors.New(err.Error("mqtt.topics"))
+		return errors.New("missing/invalid config key mqtt.topics")
 	}
 
 	// validate database config
@@ -70,7 +57,7 @@ func (c *Config) validate() error {
 		}
 	}
 	if !valid {
-		return errors.New(err.Error("database.type"))
+		return errors.New("missing/invalid config key database.type")
 	}
 
 	// influxdb
@@ -101,12 +88,7 @@ func LoadConfig(path string) (*Config, error) {
 	decoder.KnownFields(true)
 
 	logging.Debug("Decoding contents of config file.")
-	// var stream []byte
-	// stream, _ = os.ReadFile(file.Name())
 
-	// if err := yaml.Unmarshal(stream, &config); err != nil {
-	// 	return nil, err
-	// }
 	if err := decoder.Decode(&config); err != nil {
 		return nil, err
 	}
