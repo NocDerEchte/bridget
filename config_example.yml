@@ -1,0 +1,15 @@
+---
+mqtt:
+  host: "127.0.0.1" # ip/dns-name of mqtt broker
+  port: 1883 # port which mqtt broker is listening
+  topics: # mqtt topics to subscribe (key: topic (format: 'table/measurement'), value: qos-level [0,1,2])
+    apartment/living_room: 1
+    apartment/kitchen: 0
+database:
+  type: influx # type of target database. Currently only influx is supported
+  influx:
+    host: "127.0.0.1" # ip/dns-name of db server (optional if localhost)
+    port: 8181 # port which db server is listening (optional if 8181)
+    org: my-personal-org # name of the influx org (optional)
+    database: home-db # name of target database
+    authScheme: Token # method used to authenticate. Currently only 'Token' is supported
