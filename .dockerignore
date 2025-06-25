@@ -1,0 +1,13 @@
+# docker
+Dockerfile*
+.dockerignore
+
+# git
+.git
+.gitignore
+
+# non source-code files
+deployments
+scripts
+
+README.md
