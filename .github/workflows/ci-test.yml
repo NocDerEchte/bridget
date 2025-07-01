@@ -1,5 +1,5 @@
 ---
-name: ci-test-dev
+name: ci-go
 
 on:
   push:
@@ -12,14 +12,15 @@ on:
       - dev
 
 jobs:
-  tests:
+  build:
+    name: Build, test and lint go project
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Setup Go
+      - name: Setup go
         uses: actions/setup-go@v5
         with:
           go-version: "1.24.4"
@@ -39,18 +40,17 @@ jobs:
       - name: Run staticcheck
         run: staticcheck ./...
 
-      - name: Install golint
-        run: go install golang.org/x/lint/golint@latest
-
-      - name: Run golint
-        run: |
-          golint_output = $(golint ./...)
-          if [[ golint_output | grep Error ]] {
-            echo golint_output
-            exit 1
-          }
-          echo golint_output
-          exit 0
-
       - name: Run tests
         run: go test -race -vet=off ./...
+
+  docker:
+    name: Build docker image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build image
+        run: |
+          docker build -t latest .
