@@ -12,8 +12,8 @@ on:
       - dev
 
 jobs:
-  lint_go:
-    runs_on: ubuntu-latest
+  tests:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
