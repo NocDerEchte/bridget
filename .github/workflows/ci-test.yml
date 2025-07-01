@@ -46,6 +46,7 @@ jobs:
   docker:
     name: Build docker image
     runs-on: ubuntu-latest
+    needs: build
 
     steps:
       - name: Checkout code
