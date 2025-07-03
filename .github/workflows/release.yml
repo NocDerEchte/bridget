@@ -1,19 +1,26 @@
 ---
-name: ci-go
+name: release
 
 on:
   push:
     branches:
-      - dev
       - main
+    paths:
+      - "**/RELEASE"
   pull_request:
+    types: [opened, synchronize]
     branches:
       - main
-      - dev
+    paths:
+      - "**/RELEASE"
 
 jobs:
+  lint:
+    name: lint
+    uses: ./.github/workflows/lint.yml
+
   build:
-    name: Build, test and lint go project
+    name: Build and test go
     runs-on: ubuntu-latest
 
     steps:
@@ -46,7 +53,6 @@ jobs:
   docker:
     name: Build docker image
     runs-on: ubuntu-latest
-    needs: build
 
     steps:
       - name: Checkout code
@@ -54,4 +60,25 @@ jobs:
 
       - name: Build image
         run: |
-          docker build -t latest .
+          docker build -t nocderechte/bridget:latest .
+
+  release:
+    name: Release pushed tag
+    runs-on: ubuntu-latest
+    needs:
+      - lint
+      - build
+      - docker
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: pipe-cd/actions-gh-release@v2.6.0
+        with:
+          release_file: "**/RELEASE"
+          token: ${{ secrets.GITHUB_TOKEN }}
