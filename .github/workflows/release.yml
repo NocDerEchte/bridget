@@ -1,18 +1,14 @@
 ---
-name: release
+name: Release
 
 on:
   push:
     branches:
       - main
-    paths:
-      - "**/RELEASE"
   pull_request:
     types: [opened, synchronize]
     branches:
       - main
-    paths:
-      - "**/RELEASE"
 
 jobs:
   lint:
