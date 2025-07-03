@@ -9,36 +9,30 @@ import (
 )
 
 type Config struct {
-	MQTT     mqttConfig     `yaml:"mqtt"`
-	Database DatabaseConfig `yaml:"database"`
+	MQTT struct {
+		Topics map[string]byte `yaml:"topics"`
+		Host   string          `yaml:"host"`
+		Port   int             `yaml:"port"`
+	} `yaml:"mqtt"`
+	Database struct {
+		InfluxDB *struct {
+			Host         string `yaml:"host"`
+			Port         int    `yaml:"port"`
+			Organization string `yaml:"org"`
+			Database     string `yaml:"database"`
+			AuthScheme   string `yaml:"authScheme"`
+		} `yaml:"influx"`
+		TailscaleDB *struct {
+			Host         string `yaml:"host"`
+			Port         int    `yaml:"port"`
+			Organization string `yaml:"org"`
+			Database     string `yaml:"database"`
+			AuthScheme   string `yaml:"authScheme"`
+		} `yaml:"tailscale"`
+	} `yaml:"database"`
 }
-
-type mqttConfig struct {
-	Topics map[string]byte `yaml:"topics"`
-	Host   string          `yaml:"host"`
-	Port   int             `yaml:"port"`
-}
-
-type DatabaseConfig struct {
-	Type        string            `yaml:"type"`
-	InfluxDB    InfluxDBConfig    `yaml:"influx"`
-	TimescaleDB TimescaleDBConfig `yaml:"timescale"`
-}
-
-type InfluxDBConfig struct {
-	Host         string `yaml:"host"`
-	Port         int    `yaml:"port"`
-	Organization string `yaml:"org"`
-	Database     string `yaml:"database"`
-	AuthScheme   string `yaml:"authScheme"`
-}
-
-type TimescaleDBConfig struct{}
 
 func (c *Config) validate() error {
-	validDatabases := []string{"influx", "timescale"}
-
-	// validate mqtt config
 	if c.MQTT.Host == "" {
 		return errors.New("missing/invalid config key mqtt.host")
 	}
@@ -48,20 +42,6 @@ func (c *Config) validate() error {
 	if c.MQTT.Topics == nil {
 		return errors.New("missing/invalid config key mqtt.topics")
 	}
-
-	// validate database config
-	valid := false
-	for _, db := range validDatabases {
-		if c.Database.Type == db {
-			valid = true
-		}
-	}
-	if !valid {
-		return errors.New("missing/invalid config key database.type")
-	}
-
-	// influxdb
-	// timescale
 
 	return nil
 }
@@ -74,14 +54,7 @@ func LoadConfig(path string) (*Config, error) {
 	}
 	logging.Debug("Successfully opened config file.")
 
-	defer func(f *os.File) error {
-		logging.Debug("Closing config file.")
-		if err := f.Close(); err != nil {
-			return err
-		}
-		logging.Debug("Successfully closed config file")
-		return nil
-	}(file)
+	defer closeConfig(file)
 
 	var config Config
 	decoder := yaml.NewDecoder(file)
@@ -99,11 +72,13 @@ func LoadConfig(path string) (*Config, error) {
 		return nil, err
 	}
 
-	logging.Debug("Checking for database config.")
-	if (config.Database == DatabaseConfig{}) {
-		return nil, errors.New("invalid config. Missing database configuration")
-	}
-	logging.Debug("Successfully checked database config. Config valid.")
-
 	return &config, nil
+}
+
+func closeConfig(f *os.File) {
+	logging.Debug("Closing config file.")
+	if err := f.Close(); err != nil {
+		logging.Warn("Failed to close config file.")
+	}
+	logging.Debug("Successfully closed config file.")
 }

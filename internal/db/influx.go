@@ -2,8 +2,10 @@ package db
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/InfluxCommunity/influxdb3-go/v2/influxdb3"
@@ -17,15 +19,18 @@ var (
 	client *influxdb3.Client
 )
 
-func initInfluxDB(c *config.Config) error {
+type InfluxDB struct {
+	config *config.Config
+}
 
-	url := fmt.Sprintf("http://%s:%d/", c.Database.InfluxDB.Host, c.Database.InfluxDB.Port)
+func (db *InfluxDB) Init() error {
+	url := fmt.Sprintf("http://%s:%d/", db.config.Database.InfluxDB.Host, db.config.Database.InfluxDB.Port)
 	clientConfig := influxdb3.ClientConfig{
 		Host:         url,
 		Token:        token,
-		Database:     c.Database.InfluxDB.Database,
-		AuthScheme:   c.Database.InfluxDB.AuthScheme,
-		Organization: c.Database.InfluxDB.Organization,
+		Database:     db.config.Database.InfluxDB.Database,
+		AuthScheme:   db.config.Database.InfluxDB.AuthScheme,
+		Organization: db.config.Database.InfluxDB.Organization,
 	}
 
 	var err error
@@ -37,7 +42,7 @@ func initInfluxDB(c *config.Config) error {
 	return nil
 }
 
-func testInfluxDBConnection() error {
+func (db *InfluxDB) TestConnection() error {
 	if client == nil {
 		return fmt.Errorf("influxDB client is not initialized")
 	}
@@ -54,26 +59,36 @@ func testInfluxDBConnection() error {
 	return nil
 }
 
-func writeInfluxDB(p *influxdb3.Point) error {
+func (db *InfluxDB) ProcessWrite(mqttTopic string, payload string) {
 	if client == nil {
-		return fmt.Errorf("influxDB client is not initialized")
+		logging.Error("InfluxDB client is not initialized.")
 	}
+	parts := strings.Split(mqttTopic, "/")
+	if len(parts) < 2 {
+		logging.Error("Invalid topic format - %s", mqttTopic)
+	}
+
+	var values influxdb3.PointValues
+	if err := json.Unmarshal([]byte(payload), &values); err != nil {
+		logging.Errorf("Invalid payload format - %w", err)
+	}
+
+	point := influxdb3.NewPoint(parts[1], values.Tags, values.Fields, time.Now())
 
 	logging.Debug("Writing to InfluxDB.")
-	if err := client.WritePoints(context.Background(), []*influxdb3.Point{p}, influxdb3.WithPrecision(lineprotocol.Nanosecond)); err != nil {
+	err := client.WritePoints(context.Background(), []*influxdb3.Point{point}, influxdb3.WithPrecision(lineprotocol.Nanosecond))
+	if err != nil {
 		logging.Warn("Failed writing InfluxDB.")
-		return nil
 	}
 	logging.Debug("Successfully send data to InfluxDB")
-	return nil
 }
 
-func closeInfluxDBConnection() error {
+func (db *InfluxDB) CloseConnection() error {
 	if err := client.Close(); err != nil {
-		logging.Debug("Failed to close InfluxDB connection")
+		logging.Debug("Failed to gracefully close InfluxDB connection.")
 		return err
 	}
 
-	logging.Debug("Successfully closed InfluxDB connection")
+	logging.Debug("Successfully closed InfluxDB connection.")
 	return nil
 }
