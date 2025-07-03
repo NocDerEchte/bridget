@@ -17,9 +17,9 @@ var (
 	connectLostHandler mqtt.ConnectionLostHandler
 )
 
-func EstablishConnection(c *config.Config) error {
+func EstablishConnection(c *config.Config, db db.Database) error {
 	messagePubHandler = func(client mqtt.Client, msg mqtt.Message) {
-		go db.ProcessWrite(c, msg.Topic(), string(msg.Payload()))
+		go db.ProcessWrite(msg.Topic(), string(msg.Payload()))
 	}
 
 	connectHandler = func(client mqtt.Client) {

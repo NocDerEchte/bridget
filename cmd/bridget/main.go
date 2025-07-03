@@ -25,27 +25,33 @@ func main() {
 		return
 	}
 
-	// connect to mqtt broker
-	logging.Info("Establishing connection to mqtt broker.")
-	if err := mqtt.EstablishConnection(config); err != nil {
-		logging.Errorf("Failed to establish connection to mqtt broker.", err)
-		os.Exit(1)
-	}
-	defer mqtt.EndConnection()
-
 	// init connection to database
 	logging.Info("Initializing database.")
-	if err := db.InitDB(config); err != nil {
+	database, err := db.NewDatabaseFromConfig(config)
+	if err != nil {
+		logging.Errorf("Failed to create database from config.", err)
+	}
+
+	err = database.Init()
+	if err != nil {
 		logging.Errorf("Failed to initialize database.", err)
 		os.Exit(1)
 	}
 
 	// test connection to database
 	logging.Info("Testing database connection.")
-	if err := db.TestConnection(config); err != nil {
+	if err := database.TestConnection(); err != nil {
 		logging.Errorf("Failed to reach database.", err)
 		os.Exit(1)
 	}
+
+	// connect to mqtt broker
+	logging.Info("Establishing connection to mqtt broker.")
+	if err := mqtt.EstablishConnection(config, database); err != nil {
+		logging.Errorf("Failed to establish connection to mqtt broker.", err)
+		os.Exit(1)
+	}
+	defer mqtt.EndConnection()
 
 	logging.Info("Successfully initialized all required components. Ready for requests.")
 	// run until Ctrl+C or SIGTERM is send

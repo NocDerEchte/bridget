@@ -21,7 +21,7 @@ services:
     restart: unless-stopped
 
   bridget:
-    build: ./../..
+    image: nocderechte/bridget:latest
     volumes:
       - ./bridget/config:/etc/bridget
     env_file:

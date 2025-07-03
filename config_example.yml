@@ -6,7 +6,6 @@ mqtt:
     apartment/living_room: 1
     apartment/kitchen: 0
 database:
-  type: influx # type of target database. Currently only influx is supported
   influx:
     host: "127.0.0.1" # ip/dns-name of db server (optional if localhost)
     port: 8181 # port which db server is listening (optional if 8181)
