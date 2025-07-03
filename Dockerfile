@@ -2,13 +2,14 @@ FROM golang:1.24-alpine AS builder
 
 WORKDIR /app
 
+COPY go.mod go.sum ./
+
+RUN go mod download
+
 COPY . .
+RUN go build ./cmd/bridget/.
 
-RUN go mod download && \ 
-    go build ./cmd/bridget/.
-
-
-FROM alpine
+FROM alpine AS deploy
 
 WORKDIR /app
 

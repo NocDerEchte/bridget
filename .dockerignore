@@ -9,5 +9,6 @@ Dockerfile*
 # non source-code files
 deployments
 scripts
+config_example
 
 README.md
