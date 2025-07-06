@@ -1,0 +1,55 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_call:
+
+jobs:
+  test:
+    name: Build and test application
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: stable
+
+      - name: Verify dependencies
+        run: go mod verify
+
+      - name: Run golangci-lint
+        uses: golangci/golangci-lint-action@v3
+
+      - name: Install staticcheck
+        run: go install honnef.co/go/tools/cmd/staticcheck@latest
+
+      - name: Run go vet
+        run: go vet ./...
+
+      - name: Run staticcheck
+        run: staticcheck ./...
+
+      - name: Run tests
+        run: go test -race -vet=off ./...
+
+      - name: Download dependencies
+        run: go mod download
+
+      - name: Build app
+        run: go build -v ./...
+
+  docker:
+    name: Test docker build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build image
+        run: docker build -t nocderechte/bridget:latest .
