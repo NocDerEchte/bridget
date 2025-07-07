@@ -21,11 +21,11 @@ services:
     restart: unless-stopped
 
   bridget:
-    image: nocderechte/bridget:latest
+    build: ./../..
     volumes:
-      - ./bridget/config:/etc/bridget
-    env_file:
-      - .env_example
+      - ./bridget/config:/etc/bridget:ro
+    environment:
+      - INFLUX_TOKEN=supersecrettoken
     depends_on:
       - mqtt
       - influxdb
