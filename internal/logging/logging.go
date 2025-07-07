@@ -8,7 +8,7 @@ import (
 )
 
 var (
-	logFormat = helper.GetEnv("LOG_FORMAT", "json") // json (default), text, dev
+	logFormat = helper.GetEnv("LOG_FORMAT", "json") // json (default), text
 	logLevel  = helper.GetEnv("LOG_LEVEL", "info")  // debug, info (default), warn, error
 	logger    *slog.Logger
 )
@@ -28,12 +28,12 @@ func InitLogger() {
 		logLevel = "info"
 	}
 
-	var handler slog.Handler = slog.NewTextHandler(os.Stdout, opts)
-	switch logFormat {
-	case "json":
+	var handler slog.Handler
+
+	if logFormat == "json" {
 		handler = slog.NewJSONHandler(os.Stdout, opts)
-	case "dev":
-		handler = &prettyHandler{level: opts.Level, out: os.Stdout}
+	} else {
+		handler = slog.NewTextHandler(os.Stdout, opts)
 	}
 
 	logger = slog.New(handler)
