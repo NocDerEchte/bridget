@@ -2,6 +2,8 @@
 name: Release
 on:
   push:
+    branches:
+      - main
     tags:
       - "v*"
 permissions:
@@ -19,7 +21,8 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version: stable
+          go-version: 1.24.4
+          cache: true
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v6
         with:
