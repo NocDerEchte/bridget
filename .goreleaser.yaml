@@ -1,3 +1,12 @@
 ---
+version: 2
+project_name: bridget
 builds:
   - main: ./cmd/bridget/
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+      - arm64
