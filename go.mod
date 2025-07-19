@@ -5,6 +5,8 @@ go 1.24.4
 require (
 	github.com/InfluxCommunity/influxdb3-go/v2 v2.7.0
 	github.com/eclipse/paho.mqtt.golang v1.5.0
+	github.com/influxdata/line-protocol/v2 v2.2.1
+	gopkg.in/yaml.v3 v3.0.1
 )
 
 require (
@@ -12,7 +14,6 @@ require (
 	github.com/goccy/go-json v0.10.5 // indirect
 	github.com/google/flatbuffers v25.2.10+incompatible // indirect
 	github.com/gorilla/websocket v1.5.3 // indirect
-	github.com/influxdata/line-protocol/v2 v2.2.1 // indirect
 	github.com/klauspost/compress v1.18.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.10 // indirect
 	github.com/pierrec/lz4/v4 v4.1.22 // indirect
@@ -28,5 +29,4 @@ require (
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250603155806-513f23925822 // indirect
 	google.golang.org/grpc v1.73.0 // indirect
 	google.golang.org/protobuf v1.36.6 // indirect
-	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

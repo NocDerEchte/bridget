@@ -1,9 +1,10 @@
 package db
 
 import (
-	"fmt"
+	"errors"
 
 	"github.com/nocderechte/bridget/internal/config"
+	"github.com/nocderechte/bridget/internal/logging"
 )
 
 type Database interface {
@@ -13,13 +14,13 @@ type Database interface {
 	CloseConnection() error
 }
 
-func NewDatabaseFromConfig(c *config.Config) (Database, error) {
+func NewDatabaseFromConfig(c *config.Config, l logging.Logger) (Database, error) {
 	switch {
 	case c.Database.InfluxDB != nil:
-		return &InfluxDB{c}, nil
+		return &InfluxDB{config: c, log: &l}, nil
 	case c.Database.TailscaleDB != nil:
-		return nil, fmt.Errorf("tailscale is not supported")
+		return nil, errors.New("tailscale is not supported")
 	default:
-		return nil, fmt.Errorf("database configuration is empty")
+		return nil, errors.New("database configuration is empty")
 	}
 }

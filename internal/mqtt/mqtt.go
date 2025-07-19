@@ -2,6 +2,7 @@ package mqtt
 
 import (
 	"fmt"
+	"net"
 
 	mqtt "github.com/eclipse/paho.mqtt.golang"
 	"github.com/nocderechte/bridget/internal/config"
@@ -10,56 +11,74 @@ import (
 	"github.com/nocderechte/bridget/pkg/helper"
 )
 
-var (
+type Client struct {
+	log                logging.Logger
+	config             *config.Config
+	database           db.Database
 	client             mqtt.Client
+	maxReconnects      int
+	reconnects         int
 	messagePubHandler  mqtt.MessageHandler
 	connectHandler     mqtt.OnConnectHandler
 	connectLostHandler mqtt.ConnectionLostHandler
-)
+}
 
-func EstablishConnection(c *config.Config, db db.Database) error {
-	messagePubHandler = func(client mqtt.Client, msg mqtt.Message) {
-		go db.ProcessWrite(msg.Topic(), string(msg.Payload()))
+func New(config *config.Config, db db.Database, l logging.Logger) *Client {
+	return &Client{config: config, database: db, log: l}
+}
+
+func (c *Client) EstablishConnection() error {
+	c.messagePubHandler = func(_ mqtt.Client, msg mqtt.Message) {
+		go c.database.ProcessWrite(msg.Topic(), string(msg.Payload()))
 	}
 
-	connectHandler = func(client mqtt.Client) {
-		logging.Info("Successfully connected to mqtt broker")
-		client.SubscribeMultiple(c.MQTT.Topics, messagePubHandler)
+	c.connectHandler = func(client mqtt.Client) {
+		c.log.Info("Successfully connected to mqtt broker")
+		client.SubscribeMultiple(c.config.MQTT.Topics, c.messagePubHandler)
 	}
 
-	connectLostHandler = func(client mqtt.Client, err error) {
-		fmt.Printf("Connect lost: %v", err)
+	c.connectLostHandler = func(client mqtt.Client, err error) {
+		if c.reconnects < c.maxReconnects {
+			c.log.Warn("lost connection to mqtt broker. Retrying in 5 seconds... - %w", err)
+
+			c.reconnects++
+
+			client.Connect()
+			return
+		}
+
+		c.log.Errorf("lost connection to mqtt broker - %w", err)
 	}
 
-	broker := c.MQTT.Host
-	port := c.MQTT.Port
+	broker := c.config.MQTT.Host
+	port := c.config.MQTT.Port
 	username := helper.GetEnv("MQTT_USER", "exampleuser")
 	password := helper.GetEnv("MQTT_PASSWORD", "examplepassword")
 	clientID := helper.GetEnv("MQTT_CLIENTID", "connector")
 
 	opts := mqtt.NewClientOptions()
-	opts.AddBroker(fmt.Sprintf("tcp://%s:%d", broker, port))
+	opts.AddBroker("tcp://" + net.JoinHostPort(broker, port))
 	opts.SetClientID(clientID)
 	opts.SetUsername(username)
 	opts.SetPassword(password)
 
-	opts.SetDefaultPublishHandler(messagePubHandler)
-	opts.OnConnect = connectHandler
-	opts.OnConnectionLost = connectLostHandler
+	opts.SetDefaultPublishHandler(c.messagePubHandler)
+	opts.OnConnect = c.connectHandler
+	opts.OnConnectionLost = c.connectLostHandler
 
-	client = mqtt.NewClient(opts)
+	c.client = mqtt.NewClient(opts)
 
-	if token := client.Connect(); token.Wait() && token.Error() != nil {
+	if token := c.client.Connect(); token.Wait() && token.Error() != nil {
 		return fmt.Errorf("unable to connect to mqtt broker: %w", token.Error())
 	}
 
 	return nil
 }
 
-func EndConnection() {
-	client.Disconnect(10)
+func (c *Client) EndConnection() {
+	c.client.Disconnect(c.config.MQTT.TimeoutMilliseconds)
 }
 
-func Publish(topic string, qos byte, payload any) {
-	client.Publish(topic, qos, false, payload)
+func (c *Client) Publish(topic string, qos byte, payload any) {
+	c.client.Publish(topic, qos, false, payload)
 }

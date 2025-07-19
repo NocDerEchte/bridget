@@ -3,82 +3,103 @@ package config
 import (
 	"errors"
 	"os"
+	"regexp"
 
 	"github.com/nocderechte/bridget/internal/logging"
 	"gopkg.in/yaml.v3"
 )
 
 type Config struct {
+	log  logging.Logger
 	MQTT struct {
-		Topics map[string]byte `yaml:"topics"`
-		Host   string          `yaml:"host"`
-		Port   int             `yaml:"port"`
+		Topics              map[string]byte `yaml:"topics"`
+		Host                string          `yaml:"host"`
+		Port                string          `yaml:"port"`
+		TimeoutMilliseconds uint            `yaml:"timeoutMilliseconds"`
 	} `yaml:"mqtt"`
 	Database struct {
 		InfluxDB *struct {
-			Host         string `yaml:"host"`
-			Port         int    `yaml:"port"`
-			Organization string `yaml:"org"`
-			Database     string `yaml:"database"`
-			AuthScheme   string `yaml:"authScheme"`
+			Host           string `yaml:"host"`
+			Port           string `yaml:"port"`
+			Organization   string `yaml:"org"`
+			Database       string `yaml:"database"`
+			AuthScheme     string `yaml:"authScheme"`
+			TimeoutSeconds int64  `yaml:"timeoutSeconds"`
 		} `yaml:"influx"`
 		TailscaleDB *struct {
-			Host         string `yaml:"host"`
-			Port         int    `yaml:"port"`
-			Organization string `yaml:"org"`
-			Database     string `yaml:"database"`
-			AuthScheme   string `yaml:"authScheme"`
+			Host           string `yaml:"host"`
+			Port           int    `yaml:"port"`
+			Organization   string `yaml:"org"`
+			Database       string `yaml:"database"`
+			AuthScheme     string `yaml:"authScheme"`
+			TimeoutSeconds int    `yaml:"timeoutSeconds"`
 		} `yaml:"tailscale"`
 	} `yaml:"database"`
 }
 
+func New(l logging.Logger) *Config {
+	return &Config{log: l}
+}
+
 func (c *Config) validate() error {
+	portRegex := `^((6553[0-5])|(655[0-2][0-9])|(65[0-4][0-9][0-9])|(6[0-4][0-9][0-9][0-9])|([1-5][0-9][0-9][0-9][0-9])|(\d{1,4}))$`
+
 	if c.MQTT.Host == "" {
-		return errors.New("missing/invalid config key mqtt.host")
+		return errors.New("value of config key mqtt.host must not be empty")
 	}
-	if c.MQTT.Port <= 0 || c.MQTT.Port > 65535 {
-		return errors.New("missing/invalid config key mqtt.port")
+
+	if c.MQTT.Port == "" {
+		return errors.New("value of config key mqtt.port must not be empty")
 	}
+
+	ok, _ := regexp.MatchString(portRegex, c.MQTT.Port)
+	if !ok {
+		return errors.New("value of config key mqtt.port is not a valid port number")
+	}
+
 	if c.MQTT.Topics == nil {
-		return errors.New("missing/invalid config key mqtt.topics")
+		return errors.New("value of config key mqtt.topics must not be empty")
 	}
 
 	return nil
 }
 
-func LoadConfig(path string) (*Config, error) {
-	logging.Debug("Opening config file.")
+func (c *Config) Load(path string) (*Config, error) {
+	c.log.Debug("Opening config file.")
 	file, err := os.Open(path)
 	if err != nil {
 		return nil, err
 	}
-	logging.Debug("Successfully opened config file.")
+	c.log.Debug("Successfully opened config file.")
 
-	defer closeConfig(file)
+	defer c.close(file)
 
 	var config Config
 	decoder := yaml.NewDecoder(file)
 	decoder.KnownFields(true)
 
-	logging.Debug("Decoding contents of config file.")
+	c.log.Debug("Decoding contents of config file.")
 
-	if err := decoder.Decode(&config); err != nil {
+	err = decoder.Decode(&config)
+	if err != nil {
 		return nil, err
 	}
-	logging.Debug("Successfully decoded contents of config file.")
+	c.log.Debug("Successfully decoded contents of config file.")
 
-	logging.Debug("Validating config.")
-	if err := config.validate(); err != nil {
+	c.log.Debug("Validating config.")
+	err = config.validate()
+	if err != nil {
 		return nil, err
 	}
 
 	return &config, nil
 }
 
-func closeConfig(f *os.File) {
-	logging.Debug("Closing config file.")
-	if err := f.Close(); err != nil {
-		logging.Warn("Failed to close config file.")
+func (c *Config) close(f *os.File) {
+	c.log.Debug("Closing config file.")
+	err := f.Close()
+	if err != nil {
+		c.log.Warn("Failed to close config file.")
 	}
-	logging.Debug("Successfully closed config file.")
+	c.log.Debug("Successfully closed config file.")
 }

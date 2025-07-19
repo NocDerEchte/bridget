@@ -7,16 +7,21 @@ import (
 	"github.com/nocderechte/bridget/pkg/helper"
 )
 
-var (
-	logFormat = helper.GetEnv("LOG_FORMAT", "json") // json (default), text
-	logLevel  = helper.GetEnv("LOG_LEVEL", "info")  // debug, info (default), warn, error
+type Logger struct {
+	logFormat string
+	logLevel  string
 	logger    *slog.Logger
-)
+}
 
-func InitLogger() {
+func NewLogger() *Logger {
+	l := Logger{}
+
+	l.logFormat = helper.GetEnv("LOG_FORMAT", "json") // json (default), text
+	l.logLevel = helper.GetEnv("LOG_LEVEL", "info")   // debug, info (default), warn, error
+
 	opts := &slog.HandlerOptions{}
 
-	switch logLevel {
+	switch l.logLevel {
 	case "debug":
 		opts.Level = slog.LevelDebug
 	case "warn":
@@ -25,37 +30,39 @@ func InitLogger() {
 		opts.Level = slog.LevelError
 	default:
 		opts.Level = slog.LevelInfo
-		logLevel = "info"
+		l.logLevel = "info"
 	}
 
 	var handler slog.Handler
 
-	if logFormat == "json" {
+	if l.logFormat == "json" {
 		handler = slog.NewJSONHandler(os.Stdout, opts)
 	} else {
 		handler = slog.NewTextHandler(os.Stdout, opts)
 	}
 
-	logger = slog.New(handler)
-	logger.Debug("Successfully initialized logging system. Level: " + logLevel + ", format: " + logFormat)
+	l.logger = slog.New(handler)
+	l.logger.Debug("Successfully initialized logging system. Level: " + l.logLevel + ", format: " + l.logFormat)
+
+	return &l
 }
 
-func Debug(msg string, args ...any) {
-	logger.Debug(msg, args...)
+func (l *Logger) Debug(msg string, args ...any) {
+	l.logger.Debug(msg, args...)
 }
 
-func Info(msg string, args ...any) {
-	logger.Info(msg, args...)
+func (l *Logger) Info(msg string, args ...any) {
+	l.logger.Info(msg, args...)
 }
 
-func Warn(msg string, args ...any) {
-	logger.Warn(msg, args...)
+func (l *Logger) Warn(msg string, args ...any) {
+	l.logger.Warn(msg, args...)
 }
 
-func Errorf(msg string, err error, args ...any) {
-	logger.With(slog.String("error", err.Error())).Error(msg, args...)
+func (l *Logger) Errorf(msg string, err error, args ...any) {
+	l.logger.With(slog.String("error", err.Error())).Error(msg, args...)
 }
 
-func Error(msg string, args ...any) {
-	logger.Error(msg, args...)
+func (l *Logger) Error(msg string, args ...any) {
+	l.logger.Error(msg, args...)
 }
