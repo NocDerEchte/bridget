@@ -15,8 +15,6 @@ import (
 	"github.com/nocderechte/bridget/internal/logging"
 )
 
-var ()
-
 type InfluxDB struct {
 	config *config.Config
 	log    *logging.Logger
