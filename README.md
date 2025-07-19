@@ -35,6 +35,7 @@ An example config can be found here:
 mqtt:
   host: "127.0.0.1"
   port: 1883
+  timeoutMilliseconds: 100
   topics:
     apartment/living_room: 1
     apartment/kitchen: 0
@@ -45,22 +46,25 @@ database:
     org: my-personal-org
     database: home-db
     authScheme: Token
+    timeoutSeconds: 5
 ```
 
 ### Configuration keys
 
-| Key                          |  Type  | Description                                                             | Required |
-| ---------------------------- | :----: | ----------------------------------------------------------------------- | :------: |
-| `mqtt.host`                  | string | IP or DNS name of the MQTT broker                                       |    ✔️     |
-| `mqtt.port`                  |  int   | Port the MQTT broker is listening on                                    |    ✔️     |
-| `mqtt.topics`                |  map   | Map of MQTT topics to QoS level. Format: `table/measurement: qos_level` |    ✔️     |
-|                              |        |                                                                         |          |
-| `database.influx`            |  map   | InfluxDB configuration                                                  |    ✔️     |
-| `database.influx.host`       | string | IP or DNS name of the InfluxDB server                                   |    ✔️     |
-| `database.influx.port`       |  int   | Port InfluxDB is listening on (default: `8181`)                         |    ❌     |
-| `database.influx.org`        | string | Name of the InfluxDB organization                                       |    ❌     |
-| `database.influx.database`   | string | Name of the target database                                             |    ✔️     |
-| `database.influx.authScheme` | string | Authentication method — currently only `Token` is supported             |    ✔️     |
+| Key                              |  Type  | Description                                                              | Required |
+| -------------------------------- | :----: | ------------------------------------------------------------------------ | :------: |
+| `mqtt.host`                      | string | IP or DNS name of the MQTT broker                                        |    ✔️     |
+| `mqtt.port`                      | string | Port the MQTT broker is listening on                                     |    ✔️     |
+| `mqtt.timeoutMilliseconds`       |  int   | Duration in milliseconds to wait when closing the connection             |    ✔️     |
+| `mqtt.topics`                    |  map   | Map of MQTT topics to QoS level. Format: `table/measurement: qos_level`  |    ✔️     |
+|                                  |        |                                                                          |          |
+| `database.influx`                |  map   | InfluxDB configuration                                                   |    ✔️     |
+| `database.influx.host`           | string | IP or DNS name of the InfluxDB server                                    |    ✔️     |
+| `database.influx.port`           | string | Port InfluxDB is listening on (default: `8181`)                          |    ❌     |
+| `database.influx.org`            | string | Name of the InfluxDB organization                                        |    ❌     |
+| `database.influx.database`       | string | Name of the target database                                              |    ✔️     |
+| `database.influx.authScheme`     | string | Authentication method — currently only `Token` is supported              |    ✔️     |
+| `database.influx.timeoutSeconds` |  int   | Duration in seconds to wait till timeout when connecting to the database |    ✔️     |
 
 ### Environment variables
 
