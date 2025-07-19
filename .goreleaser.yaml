@@ -1,8 +1,14 @@
 ---
 version: 2
 project_name: bridget
+before:
+  hooks:
+    - go mod tidy
+
 builds:
   - main: ./cmd/bridget/
+    env:
+      - CGO_ENABLED=0
     goos:
       - linux
       - windows
@@ -10,3 +16,46 @@ builds:
     goarch:
       - amd64
       - arm64
+
+dockers:
+  - image_templates:
+      - "ghcr.io/nocderechte/{{ .ProjectName }}:{{ .Version }}-amd64"
+    dockerfile: Dockerfile_goreleaser
+    use: buildx
+    build_flag_templates:
+      - "--platform=linux/amd64"
+      - --label=org.opencontainers.image.title={{ .ProjectName }}
+      - --label=org.opencontainers.image.description={{ .ProjectName }}
+      - --label=org.opencontainers.image.url=https://github.com/nocderechte/{{ .ProjectName }}
+      - --label=org.opencontainers.image.source=https://github.com/nocderechte/{{ .ProjectName }}
+      - --label=org.opencontainers.image.version={{ .Version }}
+      - --label=org.opencontainers.image.created={{ time "2006-01-02T15:04:05Z07:00" }}
+      - --label=org.opencontainers.image.revision={{ .FullCommit }}
+      - --label=org.opencontainers.image.licenses=GPL-3.0
+
+  - image_templates:
+      - "ghcr.io/nocderechte/{{ .ProjectName }}:{{ .Version }}-arm64"
+    dockerfile: Dockerfile_goreleaser
+    use: buildx
+    goarch: arm64
+    build_flag_templates:
+      - "--platform=linux/arm64"
+      - --label=org.opencontainers.image.title={{ .ProjectName }}
+      - --label=org.opencontainers.image.description={{ .ProjectName }}
+      - --label=org.opencontainers.image.url=https://github.com/nocderechte/{{ .ProjectName }}
+      - --label=org.opencontainers.image.source=https://github.com/nocderechte/{{ .ProjectName }}
+      - --label=org.opencontainers.image.version={{ .Version }}
+      - --label=org.opencontainers.image.created={{ time "2006-01-02T15:04:05Z07:00" }}
+      - --label=org.opencontainers.image.revision={{ .FullCommit }}
+      - --label=org.opencontainers.image.licenses=GPL-3.0
+
+docker_manifests:
+  - name_template: "ghcr.io/nocderechte/{{ .ProjectName }}:{{ .Version }}"
+    image_templates:
+      - "ghcr.io/nocderechte/{{ .ProjectName }}:{{ .Version }}-amd64"
+      - "ghcr.io/nocderechte/{{ .ProjectName }}:{{ .Version }}-arm64"
+
+  - name_template: "ghcr.io/nocderechte/{{ .ProjectName }}:latest"
+    image_templates:
+      - "ghcr.io/nocderechte/{{ .ProjectName }}:{{ .Version }}-amd64"
+      - "ghcr.io/nocderechte/{{ .ProjectName }}:{{ .Version }}-arm64"

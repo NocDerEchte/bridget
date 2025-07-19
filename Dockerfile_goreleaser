@@ -1,0 +1,5 @@
+FROM alpine AS deploy
+
+COPY bridget /bridget
+
+ENTRYPOINT [ "/bridget" ]
