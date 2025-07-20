@@ -33,7 +33,7 @@ checksum:
 builds:
   - main: ./cmd/bridget/
     env:
-      - CGO_ENABLED=0
+      - CGO_ENABLED=1
     goos:
       - linux
       - windows
@@ -41,12 +41,6 @@ builds:
     goarch:
       - amd64
       - arm64
-      - arm
-    goarm:
-      - "7"
-    ignore:
-      - goos: windows
-        goarch: arm
 
 kos:
   - main: ./cmd/bridget
