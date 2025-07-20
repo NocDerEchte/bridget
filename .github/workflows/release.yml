@@ -2,6 +2,8 @@
 name: Release
 on:
   push:
+    branches:
+      - main
     tags:
       - "v*"
 permissions:
@@ -43,3 +45,11 @@ jobs:
           args: release --clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update Docher Hub README
+        uses: peter-evans/dockerhub-description@v4
+        with:
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: nocderechte/bridget
+          readme-filepath: ./README.md
+          short-description: ${{ github.event.repository.description }}
