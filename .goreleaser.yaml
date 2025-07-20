@@ -1,9 +1,34 @@
+# yaml-language-server: $schema=https://goreleaser.com/static/schema.json
 ---
 version: 2
 project_name: bridget
 before:
   hooks:
     - go mod tidy
+
+release:
+  name_template: "Bridget v{{ .Version }}"
+
+changelog:
+  use: git
+  groups:
+    - title: New Features
+      regexp: '^feat(\(.+\))?!?:.+$'
+      order: 10
+    - title: Bug Fixes
+      regexp: '^(fix|refactor)(\(.+\))?!?:.+$'
+      order: 20
+    - title: Documentation updates
+      regexp: '^docs(\(.+\))?!?:.+$'
+      order: 30
+  filters:
+    include:
+      - '^feat(\(.+\))?!?:.+$'
+      - '^(fix|refactor)(\(.+\))?!?:.+$'
+      - '^docs(\(.+\))?!?:.+$'
+
+checksum:
+  name_template: checksums.txt
 
 builds:
   - main: ./cmd/bridget/
@@ -16,46 +41,32 @@ builds:
     goarch:
       - amd64
       - arm64
+      - arm
+    goarm:
+      - "7"
+    ignore:
+      - goos: windows
+        goarch: arm
 
-dockers:
-  - image_templates:
-      - "ghcr.io/nocderechte/{{ .ProjectName }}:{{ .Version }}-amd64"
-    dockerfile: Dockerfile_goreleaser
-    use: buildx
-    build_flag_templates:
-      - "--platform=linux/amd64"
-      - --label=org.opencontainers.image.title={{ .ProjectName }}
-      - --label=org.opencontainers.image.description={{ .ProjectName }}
-      - --label=org.opencontainers.image.url=https://github.com/nocderechte/{{ .ProjectName }}
-      - --label=org.opencontainers.image.source=https://github.com/nocderechte/{{ .ProjectName }}
-      - --label=org.opencontainers.image.version={{ .Version }}
-      - --label=org.opencontainers.image.created={{ time "2006-01-02T15:04:05Z07:00" }}
-      - --label=org.opencontainers.image.revision={{ .FullCommit }}
-      - --label=org.opencontainers.image.licenses=GPL-3.0
+kos:
+  - main: ./cmd/bridget
+    repositories:
+      - ghcr.io/nocderechte/bridget
+      - docker.io/nocderechte/bridget
+    tags:
+      - "v{{.Version}}"
+      - latest
+    labels:
+      io.artifacthub.package.readme-url: https://raw.githubusercontent.com/nocderechte/bridget/main/README.md
+      io.artifacthub.package.license: GPL-3.0
+      org.opencontainers.image.created: "{{ .Date }}"
+      org.opencontainers.image.name: "{{ .ProjectName }}"
+      org.opencontainers.image.revision: "{{ .FullCommit }}"
+      org.opencontainers.image.version: "{{ .Version }}"
+      org.opencontainers.image.source: "{{ .GitURL }}"
 
-  - image_templates:
-      - "ghcr.io/nocderechte/{{ .ProjectName }}:{{ .Version }}-arm64"
-    dockerfile: Dockerfile_goreleaser
-    use: buildx
-    goarch: arm64
-    build_flag_templates:
-      - "--platform=linux/arm64"
-      - --label=org.opencontainers.image.title={{ .ProjectName }}
-      - --label=org.opencontainers.image.description={{ .ProjectName }}
-      - --label=org.opencontainers.image.url=https://github.com/nocderechte/{{ .ProjectName }}
-      - --label=org.opencontainers.image.source=https://github.com/nocderechte/{{ .ProjectName }}
-      - --label=org.opencontainers.image.version={{ .Version }}
-      - --label=org.opencontainers.image.created={{ time "2006-01-02T15:04:05Z07:00" }}
-      - --label=org.opencontainers.image.revision={{ .FullCommit }}
-      - --label=org.opencontainers.image.licenses=GPL-3.0
-
-docker_manifests:
-  - name_template: "ghcr.io/nocderechte/{{ .ProjectName }}:{{ .Version }}"
-    image_templates:
-      - "ghcr.io/nocderechte/{{ .ProjectName }}:{{ .Version }}-amd64"
-      - "ghcr.io/nocderechte/{{ .ProjectName }}:{{ .Version }}-arm64"
-
-  - name_template: "ghcr.io/nocderechte/{{ .ProjectName }}:latest"
-    image_templates:
-      - "ghcr.io/nocderechte/{{ .ProjectName }}:{{ .Version }}-amd64"
-      - "ghcr.io/nocderechte/{{ .ProjectName }}:{{ .Version }}-arm64"
+    bare: true
+    preserve_import_paths: false
+    platforms:
+      - linux/amd64
+      - linux/arm64
